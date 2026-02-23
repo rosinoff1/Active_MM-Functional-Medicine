@@ -394,7 +394,6 @@ p {
   align-items: flex-start;
   width: 40%;
   padding: clamp(2rem, 6vw, 5rem) clamp(3rem, 5vw, 5rem) clamp(2rem, 6vw, 5rem) clamp(2rem, 4vw, 4rem);
-  background-color: rgba(250, 247, 244, 0.8);
 }
 
 .hero-quote {
