@@ -590,6 +590,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1.5rem clamp(1.25rem, 3vw, 2rem);
   font-style: italic;
   color: var(--color-text);
   opacity: 0.5;
@@ -644,7 +645,7 @@ p {
 }
 
 .programs-hero + .section {
-  padding-top: 1rem;
+  padding-top: 1.5rem;
 }
 
 .program-card-wrapper {
@@ -692,6 +693,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1.5rem clamp(1.25rem, 3vw, 2rem);
   font-style: italic;
   color: var(--color-text);
   opacity: 0.5;
@@ -742,7 +744,7 @@ p {
 }
 
 .services-hero + .section {
-  padding-top: 1rem;
+  padding-top: 1.5rem;
 }
 
 .services-grid {
@@ -785,7 +787,7 @@ p {
 }
 
 .blog-hero + .section {
-  padding-top: 1rem;
+  padding-top: 1.5rem;
 }
 
 .blog-grid {
