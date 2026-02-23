@@ -348,28 +348,30 @@ p {
    HERO
    ============================================================ */
 .hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  min-height: 70vh;
-  min-height: 70dvh;
-  margin-top: 0;
-  background-color: var(--color-background);
-}
-
-.hero-photo {
   position: relative;
+  width: 100%;
+  min-height: 80vh;
+  min-height: 80dvh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   overflow: hidden;
+  margin-top: 0;
   background-color: var(--color-card);
 }
 
 .hero-image {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: left center;
 }
 
 .hero-placeholder {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   background-color: var(--color-card);
@@ -384,25 +386,35 @@ p {
 }
 
 .hero-content {
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: clamp(2rem, 6vw, 5rem) clamp(2rem, 5vw, 4rem);
+  align-items: flex-start;
+  max-width: 420px;
+  padding: clamp(2rem, 6vw, 5rem) clamp(2rem, 5vw, 6rem);
 }
 
 .hero-quote {
   font-family: var(--font-heading);
-  font-size: clamp(1.4rem, 2.8vw, 2.4rem);
+  font-size: clamp(1rem, 1.6vw, 1.35rem);
   color: var(--color-text);
-  max-width: 100%;
-  line-height: 1.4;
-  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+  font-weight: 400;
+}
+
+.hero-attribution {
+  font-family: var(--font-body);
+  font-size: clamp(0.75rem, 0.9vw, 0.85rem);
+  color: var(--color-accent-dark);
+  margin-bottom: 2rem;
+  letter-spacing: 0.02em;
 }
 
 .hero .btn-primary {
   background-color: var(--color-text);
   color: var(--color-white);
-  align-self: flex-start;
 }
 
 .hero .btn-primary:hover {
@@ -1033,25 +1045,23 @@ p {
   }
 
   .hero {
-    grid-template-columns: 1fr;
+    min-height: 60vh;
+    min-height: 60dvh;
+    align-items: flex-end;
   }
 
-  .hero-photo {
-    aspect-ratio: 4 / 3;
-    max-height: 50vh;
+  .hero-image {
+    object-position: center top;
   }
 
   .hero-content {
-    text-align: center;
-    align-items: center;
-  }
-
-  .hero .btn-primary {
-    align-self: center;
+    max-width: none;
+    padding: clamp(1.5rem, 4vw, 2.5rem);
+    background-color: rgba(250, 247, 244, 0.85);
   }
 
   .hero-quote {
-    font-size: clamp(1.3rem, 5vw, 1.8rem);
+    font-size: clamp(1rem, 4vw, 1.2rem);
   }
 
   .benefit-grid {
