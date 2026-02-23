@@ -1006,7 +1006,7 @@ p {
    CTA BAND (used between sections)
    ============================================================ */
 .cta-band {
-  background-color: var(--color-sage);
+  background-color: var(--color-accent-mid);
   text-align: center;
   padding: clamp(2.5rem, 5vw, 4rem) clamp(1.25rem, 5vw, 5%);
 }
