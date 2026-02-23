@@ -644,7 +644,7 @@ p {
 }
 
 .programs-hero + .section {
-  padding-top: 0;
+  padding-top: 1rem;
 }
 
 .program-card-wrapper {
@@ -742,7 +742,7 @@ p {
 }
 
 .services-hero + .section {
-  padding-top: 0;
+  padding-top: 1rem;
 }
 
 .services-grid {
@@ -785,7 +785,7 @@ p {
 }
 
 .blog-hero + .section {
-  padding-top: 0;
+  padding-top: 1rem;
 }
 
 .blog-grid {
