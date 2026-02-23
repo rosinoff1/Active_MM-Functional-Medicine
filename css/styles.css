@@ -949,7 +949,7 @@ p {
    SUBSCRIBE SECTION
    ============================================================ */
 .subscribe-section {
-  background-color: var(--color-background);
+  background-color: var(--color-card);
 }
 
 .subscribe-section h2 {
@@ -1005,7 +1005,7 @@ p {
    CTA BAND (used between sections)
    ============================================================ */
 .cta-band {
-  background-color: var(--color-card);
+  background-color: var(--color-background);
   text-align: center;
   padding: clamp(2.5rem, 5vw, 4rem) clamp(1.25rem, 5vw, 5%);
 }
