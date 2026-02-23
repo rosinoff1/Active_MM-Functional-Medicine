@@ -12,7 +12,6 @@
   --color-accent-dark: #8A6B5B;
   --color-text: #1A1A1A;
   --color-sage: #C2CDB8;
-  --color-sage-dark: #8E9F85;
 
   --font-heading: 'Gilda Display', serif;
   --font-body: 'Poppins', sans-serif;
@@ -80,14 +79,14 @@ a {
 a:focus-visible,
 button:focus-visible,
 iframe:focus-visible {
-  outline: 2px solid var(--color-sage-dark);
+  outline: 2px solid var(--color-sage);
   outline-offset: 2px;
 }
 
 .btn-primary:focus-visible,
 .btn-nav:focus-visible,
 .btn-secondary:focus-visible {
-  outline: 2px solid var(--color-sage-dark);
+  outline: 2px solid var(--color-sage);
   outline-offset: 3px;
 }
 
@@ -372,7 +371,7 @@ p {
 .hero-placeholder {
   position: absolute;
   inset: 0;
-  width: 100%;
+  width: 50%;
   height: 100%;
   background-color: var(--color-card);
   display: flex;
@@ -406,10 +405,10 @@ p {
 
 .hero-attribution {
   font-family: var(--font-body);
-  font-size: clamp(0.75rem, 0.9vw, 0.85rem);
+  font-size: clamp(0.9rem, 1.2vw, 1.05rem);
   color: var(--color-accent-dark);
   margin-bottom: 2rem;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
 }
 
 .hero .btn-primary {
@@ -985,7 +984,7 @@ p {
 }
 
 .subscribe-form input[type="email"]:focus {
-  border-color: var(--color-sage-dark);
+  border-color: var(--color-sage);
 }
 
 .subscribe-form input[type="email"]::placeholder {
@@ -1007,7 +1006,7 @@ p {
    CTA BAND (used between sections)
    ============================================================ */
 .cta-band {
-  background-color: var(--color-sage-dark);
+  background-color: var(--color-sage);
   text-align: center;
   padding: clamp(2.5rem, 5vw, 4rem) clamp(1.25rem, 5vw, 5%);
 }
