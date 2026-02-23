@@ -376,7 +376,9 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.5rem clamp(1.25rem, 3vw, 2rem);
+  text-align: center;
+  padding: 2rem clamp(1.5rem, 4vw, 3rem);
+  max-width: 320px;
   font-family: var(--font-body);
   font-style: italic;
   color: var(--color-text);
@@ -590,7 +592,10 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.5rem clamp(1.25rem, 3vw, 2rem);
+  text-align: center;
+  padding: 2rem clamp(1.5rem, 4vw, 3rem);
+  max-width: 320px;
+  margin: 0 auto;
   font-style: italic;
   color: var(--color-text);
   opacity: 0.5;
@@ -693,7 +698,10 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.5rem clamp(1.25rem, 3vw, 2rem);
+  text-align: center;
+  padding: 2rem clamp(1.5rem, 4vw, 3rem);
+  max-width: 320px;
+  margin: 0 auto;
   font-style: italic;
   color: var(--color-text);
   opacity: 0.5;
