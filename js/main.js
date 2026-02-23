@@ -1,5 +1,5 @@
 /* ============================================================
-   Marylee Marre Functional Medicine — Main JavaScript
+   Marylee Marre Functional Medicine - Main JavaScript
    ============================================================ */
 
 (function () {

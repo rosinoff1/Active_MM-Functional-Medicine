@@ -1,5 +1,5 @@
 /* ============================================================
-   Marylee Marre Functional Medicine — Global Styles
+   Marylee Marre Functional Medicine - Global Styles
    ============================================================ */
 
 /* --- Design Tokens --- */
@@ -11,8 +11,8 @@
   --color-accent-mid: #DDBBAC;
   --color-accent-dark: #8A6B5B;
   --color-text: #1A1A1A;
-  --color-sage: #A8B5A2;
-  --color-sage-dark: #6A7B65;
+  --color-sage: #C2CDB8;
+  --color-sage-dark: #8E9F85;
 
   --font-heading: 'Gilda Display', serif;
   --font-body: 'Poppins', sans-serif;
@@ -348,21 +348,21 @@ p {
    HERO
    ============================================================ */
 .hero {
-  position: relative;
-  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   min-height: 70vh;
   min-height: 70dvh;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
-  overflow: hidden;
   margin-top: 0;
+  background-color: var(--color-background);
+}
+
+.hero-photo {
+  position: relative;
+  overflow: hidden;
   background-color: var(--color-card);
 }
 
 .hero-image {
-  position: absolute;
-  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -370,8 +370,6 @@ p {
 }
 
 .hero-placeholder {
-  position: absolute;
-  inset: 0;
   width: 100%;
   height: 100%;
   background-color: var(--color-card);
@@ -385,32 +383,26 @@ p {
   font-size: 0.9rem;
 }
 
-.hero-overlay {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  padding: clamp(2rem, 6vw, 5rem) clamp(1.25rem, 5vw, 5%);
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.45) 0%, transparent 100%);
-}
-
-.hero-overlay .hero-content {
-  max-width: var(--max-width);
-  margin: 0 auto;
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(2rem, 6vw, 5rem) clamp(2rem, 5vw, 4rem);
 }
 
 .hero-quote {
   font-family: var(--font-heading);
   font-size: clamp(1.4rem, 2.8vw, 2.4rem);
-  color: var(--color-white);
+  color: var(--color-text);
   max-width: 100%;
   line-height: 1.4;
   margin-bottom: 1.5rem;
-  white-space: nowrap;
 }
 
 .hero .btn-primary {
   background-color: var(--color-text);
   color: var(--color-white);
+  align-self: flex-start;
 }
 
 .hero .btn-primary:hover {
@@ -1029,7 +1021,7 @@ p {
 }
 
 /* ============================================================
-   RESPONSIVE — Mobile First Overrides
+   RESPONSIVE - Mobile First Overrides
    ============================================================ */
 @media (max-width: 768px) {
   .nav-links {
@@ -1041,12 +1033,25 @@ p {
   }
 
   .hero {
-    align-items: flex-end;
+    grid-template-columns: 1fr;
+  }
+
+  .hero-photo {
+    aspect-ratio: 4 / 3;
+    max-height: 50vh;
+  }
+
+  .hero-content {
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero .btn-primary {
+    align-self: center;
   }
 
   .hero-quote {
     font-size: clamp(1.3rem, 5vw, 1.8rem);
-    white-space: normal;
   }
 
   .benefit-grid {
@@ -1093,10 +1098,6 @@ p {
 }
 
 @media (max-width: 480px) {
-  .hero-overlay {
-    padding-bottom: clamp(2rem, 8vw, 4rem);
-  }
-
   .benefit-card {
     padding: 1.25rem 1rem;
   }
@@ -1115,12 +1116,6 @@ p {
     font-size: 0.85rem;
   }
 
-  .hero-quote {
-    font-size: 1.2rem;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-  }
-
   .footer-links {
     flex-wrap: wrap;
     gap: 0.75rem;
@@ -1132,7 +1127,7 @@ p {
 }
 
 /* ============================================================
-   ANIMATIONS — Subtle entrance
+   ANIMATIONS - Subtle entrance
    ============================================================ */
 .fade-in {
   opacity: 0;
