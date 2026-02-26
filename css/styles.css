@@ -963,6 +963,105 @@ p {
 }
 
 /* ============================================================
+   FAQ PAGE
+   ============================================================ */
+.faq-hero {
+  padding-top: calc(80px + clamp(3rem, 8vw, 6rem));
+  padding-bottom: clamp(1.5rem, 3vw, 2rem);
+  background-color: var(--color-background);
+}
+
+.faq-section {
+  background-color: var(--color-white);
+}
+
+.faq-list {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--color-card);
+}
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.5rem 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-heading);
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  font-weight: 400;
+  color: var(--color-text);
+  text-align: left;
+  line-height: 1.4;
+  gap: 1rem;
+}
+
+.faq-question:hover {
+  color: var(--color-accent-mid);
+}
+
+.faq-chevron {
+  flex-shrink: 0;
+  stroke: var(--color-text);
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform 0.3s ease;
+}
+
+.faq-question[aria-expanded="true"] .faq-chevron {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  padding: 0 0;
+}
+
+.faq-answer[hidden] {
+  display: block;
+  max-height: 0;
+  padding: 0 0;
+}
+
+.faq-answer:not([hidden]) {
+  max-height: 500px;
+  padding: 0 0 1.5rem;
+}
+
+.faq-answer p {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  max-width: none;
+  color: var(--color-text);
+}
+
+/* ============================================================
+   SHOP PAGE
+   ============================================================ */
+.shop-hero {
+  padding-top: calc(80px + clamp(3rem, 8vw, 6rem));
+  padding-bottom: clamp(3rem, 8vw, 6rem);
+  background-color: var(--color-background);
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+}
+
+.shop-hero .section-inner {
+  width: 100%;
+}
+
+/* ============================================================
    FOOTER
    ============================================================ */
 .site-footer {
