@@ -45,6 +45,21 @@
     }, { passive: true });
   }
 
+  /* --- FAQ Accordion --- */
+  var faqButtons = document.querySelectorAll('.faq-question');
+  faqButtons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var expanded = btn.getAttribute('aria-expanded') === 'true';
+      var answer = btn.nextElementSibling;
+      btn.setAttribute('aria-expanded', !expanded);
+      if (expanded) {
+        answer.setAttribute('hidden', '');
+      } else {
+        answer.removeAttribute('hidden');
+      }
+    });
+  });
+
   /* --- Fade-in on scroll (Intersection Observer) --- */
   const fadeElements = document.querySelectorAll('.fade-in');
 
