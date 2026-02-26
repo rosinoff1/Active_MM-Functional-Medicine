@@ -844,6 +844,12 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  padding: 1.5rem;
+  font-style: italic;
+  color: var(--color-text);
+  opacity: 0.5;
+  font-size: 0.85rem;
 }
 
 .blog-card-body {
