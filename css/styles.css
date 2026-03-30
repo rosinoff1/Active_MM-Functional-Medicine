@@ -286,18 +286,18 @@ p {
   font-weight: 400;
   font-size: clamp(0.8rem, 1vw, 0.9rem);
   padding: 0.9rem 2rem;
-  background-color: var(--color-text);
-  color: var(--color-white);
+  background-color: var(--color-card);
+  color: var(--color-text);
   border: none;
   border-radius: 2px;
   letter-spacing: 0.03em;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
-  background-color: var(--color-accent-mid);
-  color: var(--color-text);
+  background-color: #3A3A3A;
+  color: var(--color-white);
   transform: translateY(-1px);
 }
 
@@ -934,7 +934,11 @@ p {
 .contact-socials svg {
   width: 18px;
   height: 18px;
-  fill: var(--color-text);
+  fill: none;
+  stroke: var(--color-text);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .contact-embed {
@@ -1133,8 +1137,11 @@ p {
 .footer-socials svg {
   width: 18px;
   height: 18px;
-  fill: var(--color-card);
-  stroke: none;
+  fill: none;
+  stroke: var(--color-card);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .footer-copy {
@@ -1206,29 +1213,29 @@ p {
    CTA BAND (used between sections)
    ============================================================ */
 .cta-band {
-  background-color: var(--color-background);
+  background-color: #3A3A3A;
   text-align: center;
   padding: clamp(2.5rem, 5vw, 4rem) clamp(1.25rem, 5vw, 5%);
 }
 
 .cta-band h2 {
-  color: var(--color-text);
+  color: var(--color-white);
   margin-bottom: 1rem;
 }
 
 .cta-band p {
-  color: var(--color-text);
+  color: var(--color-white);
   margin: 0 auto 1.5rem;
 }
 
 .cta-band .btn-primary {
-  background-color: var(--color-text);
-  color: var(--color-white);
+  background-color: var(--color-card);
+  color: var(--color-text);
 }
 
 .cta-band .btn-primary:hover {
-  background-color: var(--color-accent-mid);
-  color: var(--color-text);
+  background-color: var(--color-white);
+  color: #3A3A3A;
 }
 
 /* ============================================================
