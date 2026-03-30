@@ -934,7 +934,11 @@ p {
 .contact-socials svg {
   width: 18px;
   height: 18px;
-  fill: var(--color-text);
+  fill: none;
+  stroke: var(--color-text);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .contact-embed {
@@ -1133,8 +1137,11 @@ p {
 .footer-socials svg {
   width: 18px;
   height: 18px;
-  fill: var(--color-card);
-  stroke: none;
+  fill: none;
+  stroke: var(--color-card);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .footer-copy {
