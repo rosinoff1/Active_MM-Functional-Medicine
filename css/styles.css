@@ -286,8 +286,8 @@ p {
   font-weight: 400;
   font-size: clamp(0.8rem, 1vw, 0.9rem);
   padding: 0.9rem 2rem;
-  background-color: #3A3A3A;
-  color: var(--color-white);
+  background-color: var(--color-card);
+  color: var(--color-text);
   border: none;
   border-radius: 2px;
   letter-spacing: 0.03em;
@@ -296,8 +296,8 @@ p {
 }
 
 .btn-primary:hover {
-  background-color: var(--color-card);
-  color: var(--color-text);
+  background-color: #3A3A3A;
+  color: var(--color-white);
   transform: translateY(-1px);
 }
 
@@ -1213,18 +1213,18 @@ p {
    CTA BAND (used between sections)
    ============================================================ */
 .cta-band {
-  background-color: var(--color-background);
+  background-color: #3A3A3A;
   text-align: center;
   padding: clamp(2.5rem, 5vw, 4rem) clamp(1.25rem, 5vw, 5%);
 }
 
 .cta-band h2 {
-  color: var(--color-text);
+  color: var(--color-white);
   margin-bottom: 1rem;
 }
 
 .cta-band p {
-  color: var(--color-text);
+  color: var(--color-white);
   margin: 0 auto 1.5rem;
 }
 
