@@ -194,8 +194,8 @@ p {
 }
 
 .nav-links .btn-nav:hover {
-  background-color: #CDCFC5;
-  color: #1A1A1A;
+  background-color: #3A3A3A;
+  color: #FAF7F4;
   transform: translateY(-1px);
 }
 
@@ -279,8 +279,8 @@ p {
 }
 
 .mobile-nav .btn-mobile-cta:hover {
-  background-color: #CDCFC5;
-  color: #1A1A1A;
+  background-color: #3A3A3A;
+  color: #FAF7F4;
 }
 
 /* ============================================================
@@ -302,9 +302,9 @@ p {
 }
 
 .btn-primary:hover {
-  background-color: #CDCFC5;
-  color: #1A1A1A;
-  border-color: #CDCFC5;
+  background-color: #3A3A3A;
+  color: #FAF7F4;
+  border-color: #3A3A3A;
   transform: translateY(-1px);
 }
 
@@ -1096,7 +1096,7 @@ p {
    FOOTER
    ============================================================ */
 .site-footer {
-  background-color: #3A3A3A;
+  background-color: #1A1A1A;
   color: var(--color-white);
   padding: clamp(2rem, 4vw, 3rem) clamp(1.25rem, 5vw, 5%);
 }
@@ -1261,9 +1261,9 @@ p {
 }
 
 .cta-band .btn-primary:hover {
-  background-color: #CDCFC5;
-  color: #1A1A1A;
-  border-color: #CDCFC5;
+  background-color: #FAF7F4;
+  color: #3A3A3A;
+  border-color: #FAF7F4;
 }
 
 /* ============================================================
