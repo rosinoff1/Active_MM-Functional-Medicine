@@ -582,6 +582,7 @@ p {
 /* Credentials Bar (full-width, above About content) */
 .credentials-bar {
   width: 100%;
+  margin-top: 80px;
   background-color: #E8DDD3;
   display: flex;
   flex-direction: row;
