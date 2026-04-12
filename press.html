@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Press | Marylee Marre Functional Medicine</title>
+  <meta name="description" content="Press and media features. Marylee Marre has been featured in leading health and wellness publications including Men's Health, Prevention, Well+Good, and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="css/styles.css" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Poppins:wght@300&family=Raleway:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .press-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    .press-card {
+      background-color: #FAF7F4;
+      border: 1px solid #E8DDD3;
+      border-radius: 8px;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .press-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    .press-card-publication {
+      font-family: 'Gilda Display', serif;
+      font-size: 0.9rem;
+      color: #A47879;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+
+    .press-card-title {
+      font-family: 'Gilda Display', serif;
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: #1A1A1A;
+      line-height: 1.35;
+      margin-bottom: 0.75rem;
+    }
+
+    .press-card-description {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 300;
+      font-size: 0.9rem;
+      color: #1A1A1A;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+    }
+
+    .press-card .btn-primary {
+      align-self: flex-start;
+    }
+
+    @media (max-width: 768px) {
+      .press-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-to-content">Skip to content</a>
+
+  <!-- SECTION: Navigation -->
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="index.html" class="nav-logo">Marylee Marre Functional Medicine</a>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="press.html" class="active">Press</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://secure.gethealthie.com/appointments/embed_appt?dietitian_id=2627582" class="btn-nav" target="_blank" rel="noopener">Book Now</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-nav" aria-hidden="true">
+    <a href="about.html">About</a>
+    <a href="programs.html">Programs</a>
+    <a href="press.html">Press</a>
+    <a href="blog.html">Blog</a>
+    <a href="faq.html">FAQ</a>
+    <a href="shop.html">Shop</a>
+    <a href="contact.html">Contact</a>
+    <a href="https://secure.gethealthie.com/appointments/embed_appt?dietitian_id=2627582" class="btn-mobile-cta" target="_blank" rel="noopener">Book Now</a>
+  </div>
+
+  <!-- SECTION: Credentials Bar -->
+  <section class="credentials-bar">
+    <div class="credential-item">
+      <h3>Board Certified</h3>
+      <p>Family Nurse Practitioner (APRN, FNP-BC) specializing in functional and integrative medicine</p>
+    </div>
+    <div class="credential-item">
+      <h3>Institute of Functional Medicine</h3>
+      <p>Active member and annual international conference attendee</p>
+    </div>
+    <div class="credential-item">
+      <h3>New York Center for Integrative Health (2021–2026)</h3>
+      <p>Affiliated practitioner, mentored by Dr. Robert Kachko, ND</p>
+    </div>
+  </section>
+
+  <!-- SECTION: Press Hero -->
+  <main id="main-content">
+
+  <section class="section press-hero">
+    <div class="section-inner text-center">
+      <h1 class="fade-in">Featured In</h1>
+      <p class="fade-in" style="margin: 1rem auto 0;">Marylee has been featured in leading health and wellness publications.</p>
+    </div>
+  </section>
+
+  <!-- SECTION: Press Grid -->
+  <section class="section">
+    <div class="press-grid">
+      <div class="press-card fade-in">
+        <span class="press-card-publication">Men's Health</span>
+        <h3 class="press-card-title">9 Best Infrared Sauna Blankets of 2024, Tested and Reviewed by Experts</h3>
+        <p class="press-card-description">At-home saunas aren't just for the rich and famous.</p>
+        <a href="https://www.menshealth.com/health/g44735492/best-infrared-sauna-blankets/" class="btn-primary" target="_blank" rel="noopener">Read Article</a>
+      </div>
+      <div class="press-card fade-in">
+        <span class="press-card-publication">Prevention</span>
+        <h3 class="press-card-title">These Infrared Sauna Blankets Help Soothe Sore Muscles</h3>
+        <p class="press-card-description">The best infrared sauna blankets to sweat it out.</p>
+        <a href="https://www.prevention.com/health/g43657360/best-infrared-sauna-blanket/" class="btn-primary" target="_blank" rel="noopener">Read Article</a>
+      </div>
+      <div class="press-card fade-in">
+        <span class="press-card-publication">BioHackers / HigherDOSE &mdash; YouTube</span>
+        <h3 class="press-card-title">BIOHACKERS series by HigherDOSE</h3>
+        <p class="press-card-description">Episode: The Future Wellness Tech That Increases Your Longevity</p>
+        <a href="https://www.youtube.com/watch?v=c77yJ8ggtno" class="btn-primary" target="_blank" rel="noopener">Watch Now</a>
+      </div>
+      <div class="press-card fade-in">
+        <span class="press-card-publication">Well+Good</span>
+        <h3 class="press-card-title">Glutathione Benefits and How It Supports Immunity</h3>
+        <p class="press-card-description">Experts explain what glutathione is, including glutathione benefits, and how to know if you're getting enough.</p>
+        <a href="https://www.wellandgood.com/food/glutathione-benefits" class="btn-primary" target="_blank" rel="noopener">Read Article</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: CTA Band -->
+  <section class="cta-band">
+    <h2 class="fade-in">Curious if Functional Medicine is Right for You?</h2>
+    <p class="fade-in">Let's start with a conversation. A 15-minute discovery call is all it takes to explore whether we're a good fit.</p>
+    <a href="https://secure.gethealthie.com/appointments/embed_appt?dietitian_id=2627582" class="btn-primary fade-in" target="_blank" rel="noopener">Book a Discovery Call</a>
+  </section>
+  </main>
+
+  <!-- SECTION: Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="footer-brand">Marylee Marre Functional Medicine</span>
+      <ul class="footer-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="press.html">Press</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/maryleemarre/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/maryleemarre/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+      </div>
+      <p class="footer-copy">Serving patients in Florida and New York &middot; Virtual appointments available &middot; contact@mmfunctionalmed.org</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
