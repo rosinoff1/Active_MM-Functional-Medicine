@@ -27,12 +27,21 @@
       padding: 2rem;
       display: flex;
       flex-direction: column;
+      text-align: center;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .press-card:hover {
       transform: translateY(-4px);
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    .press-card-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+      margin-bottom: 1rem;
     }
 
     .press-card-publication {
@@ -64,7 +73,7 @@
     }
 
     .press-card .btn-primary {
-      align-self: flex-start;
+      align-self: center;
     }
 
     @media (max-width: 768px) {
@@ -126,28 +135,32 @@
   <section class="section">
     <div class="press-grid">
       <div class="press-card fade-in">
-        <span class="press-card-publication">Men's Health</span>
-        <h3 class="press-card-title">9 Best Infrared Sauna Blankets of 2024, Tested and Reviewed by Experts</h3>
-        <p class="press-card-description">At-home saunas aren't just for the rich and famous.</p>
-        <a href="https://www.menshealth.com/health/g44735492/best-infrared-sauna-blankets/" class="btn-primary" target="_blank" rel="noopener">Read Article</a>
-      </div>
-      <div class="press-card fade-in">
-        <span class="press-card-publication">Prevention</span>
-        <h3 class="press-card-title">These Infrared Sauna Blankets Help Soothe Sore Muscles</h3>
-        <p class="press-card-description">The best infrared sauna blankets to sweat it out.</p>
-        <a href="https://www.prevention.com/health/g43657360/best-infrared-sauna-blanket/" class="btn-primary" target="_blank" rel="noopener">Read Article</a>
-      </div>
-      <div class="press-card fade-in">
+        <img src="photos/press-higherdose.png.png" alt="BioHackers / HigherDOSE" class="press-card-image">
         <span class="press-card-publication">BioHackers / HigherDOSE &mdash; YouTube</span>
         <h3 class="press-card-title">BIOHACKERS series by HigherDOSE</h3>
         <p class="press-card-description">Episode: The Future Wellness Tech That Increases Your Longevity</p>
         <a href="https://www.youtube.com/watch?v=c77yJ8ggtno" class="btn-primary" target="_blank" rel="noopener">Watch Now</a>
       </div>
       <div class="press-card fade-in">
+        <img src="photos/press-mens-health.png.png" alt="Men's Health" class="press-card-image">
+        <span class="press-card-publication">Men's Health</span>
+        <h3 class="press-card-title">9 Best Infrared Sauna Blankets of 2024, Tested and Reviewed by Experts</h3>
+        <p class="press-card-description">At-home saunas aren't just for the rich and famous.</p>
+        <a href="https://www.menshealth.com/health/g44735492/best-infrared-sauna-blankets/" class="btn-primary" target="_blank" rel="noopener">Read Article</a>
+      </div>
+      <div class="press-card fade-in">
+        <img src="photos/press-prevention.png.png" alt="Prevention" class="press-card-image">
+        <span class="press-card-publication">Prevention</span>
+        <h3 class="press-card-title">These Infrared Sauna Blankets Help Soothe Sore Muscles</h3>
+        <p class="press-card-description">The best infrared sauna blankets to sweat it out.</p>
+        <a href="https://www.prevention.com/health/g43657360/best-infrared-sauna-blanket/" class="btn-primary" target="_blank" rel="noopener">Read Article</a>
+      </div>
+      <div class="press-card fade-in">
+        <img src="photos/press-wellgood.png.png" alt="Well+Good" class="press-card-image">
         <span class="press-card-publication">Well+Good</span>
         <h3 class="press-card-title">Glutathione Benefits and How It Supports Immunity</h3>
         <p class="press-card-description">Experts explain what glutathione is, including glutathione benefits, and how to know if you're getting enough.</p>
-        <a href="https://www.wellandgood.com/food/glutathione-benefits" class="btn-primary" target="_blank" rel="noopener">Read Article</a>
+        <a class="btn-primary" style="opacity: 0.5; cursor: default; pointer-events: none;">Article Unavailable</a>
       </div>
     </div>
   </section>
