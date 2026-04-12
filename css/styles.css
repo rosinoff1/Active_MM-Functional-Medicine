@@ -178,9 +178,9 @@ p {
 }
 
 .nav-links .btn-nav {
-  font-family: var(--font-cta);
+  font-family: 'Gilda Display', serif;
   font-weight: 400;
-  font-size: 0.8rem;
+  font-size: 17px;
   padding: 0.6rem 1.4rem;
   background-color: #A47879;
   color: #FAF7F4;
@@ -267,13 +267,14 @@ p {
 }
 
 .mobile-nav .btn-mobile-cta {
-  font-family: var(--font-cta);
+  font-family: 'Gilda Display', serif;
   font-weight: 400;
-  font-size: 0.9rem;
+  font-size: 17px;
   padding: 0.8rem 2rem;
   background-color: #A47879;
   color: #FAF7F4;
   border-radius: 2px;
+  letter-spacing: 0.03em;
   margin-top: 1rem;
 }
 
@@ -287,9 +288,9 @@ p {
    ============================================================ */
 .btn-primary {
   display: inline-block;
-  font-family: var(--font-cta);
+  font-family: 'Gilda Display', serif;
   font-weight: 400;
-  font-size: clamp(0.8rem, 1vw, 0.9rem);
+  font-size: 17px;
   padding: 0.9rem 2rem;
   background-color: #A47879;
   color: #FAF7F4;
@@ -588,7 +589,7 @@ p {
 .credentials-bar {
   width: 100%;
   margin-top: 80px;
-  background-color: #E8DDD3;
+  background-color: #CDCFC5;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
