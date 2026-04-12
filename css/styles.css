@@ -589,7 +589,7 @@ p {
 .credentials-bar {
   width: 100%;
   margin-top: 80px;
-  background-color: #CDCFC5;
+  background-color: #E8DDD3;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -1095,7 +1095,7 @@ p {
    FOOTER
    ============================================================ */
 .site-footer {
-  background-color: var(--color-text);
+  background-color: #3A3A3A;
   color: var(--color-white);
   padding: clamp(2rem, 4vw, 3rem) clamp(1.25rem, 5vw, 5%);
 }
@@ -1238,29 +1238,30 @@ p {
    CTA BAND (used between sections)
    ============================================================ */
 .cta-band {
-  background-color: #3A3A3A;
+  background-color: #CDCFC5;
   text-align: center;
   padding: clamp(2.5rem, 5vw, 4rem) clamp(1.25rem, 5vw, 5%);
 }
 
 .cta-band h2 {
-  color: var(--color-white);
+  color: #1A1A1A;
   margin-bottom: 1rem;
 }
 
 .cta-band p {
-  color: var(--color-white);
+  color: #1A1A1A;
   margin: 0 auto 1.5rem;
 }
 
 .cta-band .btn-primary {
-  background-color: #A47879;
-  color: #FAF7F4;
+  background: transparent;
+  border: 1.5px solid #1A1A1A;
+  color: #1A1A1A;
 }
 
 .cta-band .btn-primary:hover {
-  background-color: #FAF7F4;
-  color: #A47879;
+  background: #1A1A1A;
+  color: #FAF7F4;
 }
 
 /* ============================================================
