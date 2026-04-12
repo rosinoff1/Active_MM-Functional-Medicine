@@ -194,8 +194,8 @@ p {
 }
 
 .nav-links .btn-nav:hover {
-  background-color: #8E6666;
-  color: #FAF7F4;
+  background-color: #CDCFC5;
+  color: #1A1A1A;
   transform: translateY(-1px);
 }
 
@@ -279,8 +279,8 @@ p {
 }
 
 .mobile-nav .btn-mobile-cta:hover {
-  background-color: #8E6666;
-  color: #FAF7F4;
+  background-color: #CDCFC5;
+  color: #1A1A1A;
 }
 
 /* ============================================================
@@ -302,8 +302,9 @@ p {
 }
 
 .btn-primary:hover {
-  background-color: #8E6666;
-  color: #FAF7F4;
+  background-color: #CDCFC5;
+  color: #1A1A1A;
+  border-color: #CDCFC5;
   transform: translateY(-1px);
 }
 
@@ -1238,18 +1239,18 @@ p {
    CTA BAND (used between sections)
    ============================================================ */
 .cta-band {
-  background-color: #CDCFC5;
+  background-color: #3A3A3A;
   text-align: center;
   padding: clamp(2.5rem, 5vw, 4rem) clamp(1.25rem, 5vw, 5%);
 }
 
 .cta-band h2 {
-  color: #1A1A1A;
+  color: #FAF7F4;
   margin-bottom: 1rem;
 }
 
 .cta-band p {
-  color: #1A1A1A;
+  color: #FAF7F4;
   margin: 0 auto 1.5rem;
 }
 
@@ -1260,8 +1261,9 @@ p {
 }
 
 .cta-band .btn-primary:hover {
-  background: #1A1A1A;
-  color: #FAF7F4;
+  background-color: #CDCFC5;
+  color: #1A1A1A;
+  border-color: #CDCFC5;
 }
 
 /* ============================================================
