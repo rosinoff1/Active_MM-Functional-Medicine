@@ -594,16 +594,19 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: center;
-  padding: 2rem 6rem;
+  align-items: stretch;
+  padding: 2rem 4rem;
   box-sizing: border-box;
   gap: 2rem;
 }
 
 .credentials-bar .credential-item {
   flex: 1;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
+  text-align: center;
   padding: 0 1rem;
   border-right: 1px solid #DDBBAC;
 }
@@ -617,6 +620,7 @@ p {
   font-size: 1rem;
   color: #1A1A1A;
   margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 .credentials-bar .credential-item p {
@@ -624,6 +628,26 @@ p {
   font-weight: 300;
   font-size: 0.85rem;
   color: #1A1A1A;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .credentials-bar {
+    flex-direction: column;
+    padding: 1.5rem 2rem;
+    align-items: center;
+  }
+  .credentials-bar .credential-item {
+    border-right: none;
+    border-bottom: 1px solid #DDBBAC;
+    padding-bottom: 1rem;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .credentials-bar .credential-item:last-child {
+    border-bottom: none;
+  }
 }
 
 .about-hero {
@@ -1304,21 +1328,6 @@ p {
 
   .testimonial-grid {
     grid-template-columns: 1fr;
-  }
-
-  .credentials-bar {
-    flex-direction: column;
-    padding: 1.5rem 2rem;
-    align-items: center;
-  }
-  .credentials-bar .credential-item {
-    border-right: none;
-    border-bottom: 1px solid #DDBBAC;
-    padding-bottom: 1rem;
-    width: 100%;
-  }
-  .credentials-bar .credential-item:last-child {
-    border-bottom: none;
   }
 
   .about-layout {
