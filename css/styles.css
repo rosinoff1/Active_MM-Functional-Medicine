@@ -296,9 +296,9 @@ p {
   font-weight: 400;
   font-size: 17px;
   padding: 0.9rem 2rem;
-  background-color: #DDBBAC;
+  background-color: #B07B7B;
   color: #FFFFFF;
-  border: 1px solid #DDBBAC;
+  border: 1px solid #B07B7B;
   border-radius: 2px;
   letter-spacing: 0.03em;
   cursor: pointer;
@@ -318,9 +318,9 @@ p {
   font-weight: 400;
   font-size: clamp(0.8rem, 1vw, 0.9rem);
   padding: 0.9rem 2rem;
-  background-color: #DDBBAC;
+  background-color: #B07B7B;
   color: #FFFFFF;
-  border: 1px solid #DDBBAC;
+  border: 1px solid #B07B7B;
   border-radius: 2px;
   letter-spacing: 0.03em;
   cursor: pointer;
@@ -427,9 +427,9 @@ p {
 }
 
 .hero .btn-primary {
-  background-color: #DDBBAC;
+  background-color: #B07B7B;
   color: #FFFFFF;
-  border: 1px solid #DDBBAC;
+  border: 1px solid #B07B7B;
   font-size: 0.8rem;
   padding: 0.6rem 1.4rem;
 }
@@ -1290,9 +1290,9 @@ p {
 }
 
 .cta-band .btn-primary {
-  background-color: #DDBBAC;
+  background-color: #B07B7B;
   color: #FFFFFF;
-  border: 1px solid #DDBBAC;
+  border: 1px solid #B07B7B;
 }
 
 .cta-band .btn-primary:hover {
