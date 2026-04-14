@@ -365,7 +365,7 @@ p {
   align-items: stretch;
   overflow: hidden;
   margin-top: 0;
-  background-color: #FAF7F4;
+  background-color: #EDE8DC;
 }
 
 .hero-image-wrapper {
@@ -381,7 +381,7 @@ p {
   bottom: 0;
   left: 0;
   width: 25%;
-  background: linear-gradient(to right, #FAF7F4 0%, rgba(250, 247, 244, 0) 100%);
+  background: linear-gradient(to right, #EDE8DC 0%, rgba(237, 232, 220, 0) 100%);
   z-index: 2;
   pointer-events: none;
 }
@@ -414,7 +414,7 @@ p {
 }
 
 .hero-content {
-  flex: 0 0 40%;
+  flex: 0 0 45%;
   position: relative;
   z-index: 2;
   display: flex;
@@ -422,7 +422,7 @@ p {
   align-items: flex-start;
   justify-content: center;
   padding: clamp(2rem, 5vw, 4rem) clamp(2rem, 4vw, 3rem) clamp(2rem, 5vw, 4rem) clamp(2rem, 6%, 5rem);
-  background-color: #FAF7F4;
+  background-color: #EDE8DC;
 }
 
 .hero-quote {
