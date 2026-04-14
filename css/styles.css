@@ -668,7 +668,8 @@ p {
   position: relative;
   border-radius: 4px;
   overflow: hidden;
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 2 / 3;
+  height: auto;
   background-color: transparent;
 }
 
