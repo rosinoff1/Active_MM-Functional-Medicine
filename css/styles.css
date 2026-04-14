@@ -184,7 +184,7 @@ p {
   padding: 0.6rem 1.4rem;
   background-color: #DDBBAC;
   color: #FFFFFF;
-  border: 1px solid #DDBBAC;
+  border: 1px solid #B07B7B;
   border-radius: 2px;
   letter-spacing: 0.03em;
   transition: background-color 0.3s ease, transform 0.2s ease;
@@ -275,7 +275,7 @@ p {
   padding: 0.8rem 2rem;
   background-color: #DDBBAC;
   color: #FFFFFF;
-  border: 1px solid #DDBBAC;
+  border: 1px solid #B07B7B;
   border-radius: 2px;
   letter-spacing: 0.03em;
   margin-top: 1rem;
