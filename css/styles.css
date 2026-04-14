@@ -1160,7 +1160,7 @@ p {
 .site-footer {
   background-color: #1A1A1A;
   color: var(--color-white);
-  padding: clamp(2rem, 4vw, 3rem) clamp(1.25rem, 5vw, 5%);
+  padding: clamp(1rem, 2vw, 1.5rem) clamp(1.25rem, 5vw, 5%);
 }
 
 .footer-inner {
