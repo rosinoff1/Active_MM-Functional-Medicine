@@ -360,9 +360,7 @@ p {
 .hero {
   position: relative;
   width: 100%;
-  aspect-ratio: 3 / 2;
-  height: auto;
-  max-height: 75vh;
+  height: 75vh;
   display: flex;
   align-items: center;
   justify-content: flex-start;
