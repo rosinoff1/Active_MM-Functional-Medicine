@@ -355,8 +355,8 @@ p {
 .hero {
   position: relative;
   width: 100%;
-  min-height: 80vh;
-  min-height: 80dvh;
+  aspect-ratio: 3 / 2;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: flex-end;
