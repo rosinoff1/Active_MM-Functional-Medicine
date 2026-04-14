@@ -360,8 +360,10 @@ p {
 .hero {
   position: relative;
   width: 100%;
-  height: 800px;
-  min-height: 800px;
+  height: 90vh;
+  min-height: 600px;
+  max-height: 900px;
+  min-width: 900px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -376,7 +378,7 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: 50% 20%;
 }
 
 .hero-placeholder {
