@@ -430,7 +430,7 @@ p {
 }
 
 .hero-content {
-  flex: 0 0 42%;
+  flex: 0 0 55%;
   position: relative;
   z-index: 2;
   display: flex;
