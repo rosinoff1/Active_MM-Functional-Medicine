@@ -1297,6 +1297,24 @@ p {
   margin-top: 0.5rem;
 }
 
+.subscribe-alt-cta {
+  font-size: 0.85rem;
+  color: var(--color-text);
+  margin-top: 1.5rem;
+  opacity: 0.75;
+}
+
+.subscribe-alt-cta a {
+  color: #B07B7B;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.3s ease;
+}
+
+.subscribe-alt-cta a:hover {
+  color: #3A3A3A;
+}
+
 /* ============================================================
    CTA BAND (used between sections)
    ============================================================ */
