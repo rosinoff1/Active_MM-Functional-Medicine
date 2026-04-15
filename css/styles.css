@@ -1067,7 +1067,7 @@ p {
    FAQ PAGE
    ============================================================ */
 .faq-section {
-  background-color: #FCF8F3;
+  background-color: var(--color-background);
 }
 
 .faq-list {
