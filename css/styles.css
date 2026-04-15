@@ -763,7 +763,7 @@ p {
 .shop-hero {
   padding-top: calc(80px + clamp(2rem, 4vw, 3rem));
   padding-bottom: clamp(2rem, 4vw, 3rem);
-  background-color: var(--color-background);
+  background-color: #E8DDD3;
   text-align: center;
 }
 
