@@ -121,7 +121,7 @@ p {
   width: 100%;
   z-index: 1000;
   background-color: var(--color-white);
-  border-bottom: 1px solid var(--color-card);
+  border-bottom: 1px solid #B07B7B;
   transition: box-shadow 0.3s ease;
 }
 
@@ -756,17 +756,22 @@ p {
 /* ============================================================
    PROGRAMS PAGE
    ============================================================ */
-.programs-hero {
+.programs-hero,
+.press-hero,
+.blog-hero,
+.faq-hero,
+.shop-hero {
   padding-top: calc(80px + clamp(3rem, 8vw, 6rem));
-  padding-bottom: clamp(1.5rem, 3vw, 2rem);
+  padding-bottom: clamp(2rem, 4vw, 3rem);
   background-color: var(--color-white);
+  text-align: center;
 }
 
-.programs-page .site-header {
-  border-bottom-color: #B07B7B;
-}
-
-.programs-hero + .section {
+.programs-hero + .section,
+.press-hero + .section,
+.blog-hero + .section,
+.faq-hero + .section,
+.shop-hero + .section {
   padding-top: 1.5rem;
 }
 
@@ -905,16 +910,6 @@ p {
 /* ============================================================
    BLOG PAGE
    ============================================================ */
-.blog-hero {
-  padding-top: calc(80px + clamp(3rem, 8vw, 6rem));
-  padding-bottom: clamp(1.5rem, 3vw, 2rem);
-  background-color: var(--color-background);
-}
-
-.blog-hero + .section {
-  padding-top: 1.5rem;
-}
-
 .blog-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1071,12 +1066,6 @@ p {
 /* ============================================================
    FAQ PAGE
    ============================================================ */
-.faq-hero {
-  padding-top: calc(80px + clamp(3rem, 8vw, 6rem));
-  padding-bottom: clamp(1.5rem, 3vw, 2rem);
-  background-color: var(--color-background);
-}
-
 .faq-section {
   background-color: var(--color-white);
 }
@@ -1158,19 +1147,6 @@ p {
 /* ============================================================
    SHOP PAGE
    ============================================================ */
-.shop-hero {
-  padding-top: calc(80px + clamp(3rem, 8vw, 6rem));
-  padding-bottom: clamp(3rem, 8vw, 6rem);
-  background-color: var(--color-background);
-  min-height: 50vh;
-  display: flex;
-  align-items: center;
-}
-
-.shop-hero .section-inner {
-  width: 100%;
-}
-
 /* ============================================================
    FOOTER
    ============================================================ */
