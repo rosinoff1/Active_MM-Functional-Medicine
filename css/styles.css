@@ -444,7 +444,7 @@ p {
 
 .hero-quote {
   font-family: var(--font-heading);
-  font-size: clamp(1.6rem, 2.3vw, 2.15rem);
+  font-size: clamp(1.45rem, 2.1vw, 1.95rem);
   color: var(--color-text);
   line-height: 1.5;
   letter-spacing: 0.02em;
