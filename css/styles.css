@@ -364,7 +364,7 @@ p {
 .hero {
   position: relative;
   width: 100%;
-  height: calc(75vh + 76px);
+  height: calc(70vh + 38px);
   display: flex;
   align-items: stretch;
   overflow: hidden;
