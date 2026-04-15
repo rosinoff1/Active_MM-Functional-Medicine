@@ -775,19 +775,6 @@ p {
   letter-spacing: 0.04em;
 }
 
-.programs-hero::after,
-.press-hero::after,
-.blog-hero::after,
-.faq-hero::after,
-.shop-hero::after {
-  content: '';
-  display: block;
-  width: 60px;
-  height: 1px;
-  background-color: #B07B7B;
-  margin: 1.5rem auto 0;
-}
-
 .programs-hero + .section,
 .press-hero + .section,
 .blog-hero + .section,
