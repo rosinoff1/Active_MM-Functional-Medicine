@@ -754,7 +754,11 @@ p {
 .programs-hero {
   padding-top: calc(80px + clamp(3rem, 8vw, 6rem));
   padding-bottom: clamp(1.5rem, 3vw, 2rem);
-  background-color: var(--color-background);
+  background-color: var(--color-white);
+}
+
+.programs-page .site-header {
+  border-bottom-color: #B07B7B;
 }
 
 .programs-hero + .section {
