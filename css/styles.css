@@ -430,7 +430,7 @@ p {
 }
 
 .hero-content {
-  flex: 0 0 55%;
+  flex: 0 0 62%;
   position: relative;
   z-index: 2;
   display: flex;
@@ -444,13 +444,13 @@ p {
 
 .hero-quote {
   font-family: var(--font-heading);
-  font-size: clamp(1.9rem, 2.8vw, 2.6rem);
+  font-size: clamp(1.6rem, 2.3vw, 2.15rem);
   color: var(--color-text);
-  line-height: 1.55;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 1.25rem;
   font-weight: 400;
-  max-width: 26ch;
+  max-width: 38ch;
   text-wrap: balance;
   font-style: italic;
 }
@@ -461,18 +461,17 @@ p {
   color: var(--color-text);
   margin-bottom: 2rem;
   letter-spacing: 0.03em;
-  max-width: 22ch;
+  max-width: 38ch;
   width: 100%;
   text-align: right;
-  transform: translateX(1.75rem);
 }
 
 .hero .btn-primary {
   background-color: #B07B7B;
   color: #FFFFFF;
   border: 1px solid #B07B7B;
-  font-size: 1.05rem;
-  padding: 0.85rem 1.9rem;
+  font-size: 1.2rem;
+  padding: 1rem 2.4rem;
 }
 
 .hero .btn-primary:hover {
