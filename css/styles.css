@@ -369,7 +369,7 @@ p {
   align-items: stretch;
   overflow: hidden;
   margin-top: 0;
-  background-color: #EDECE8;
+  background-color: #EDE7DA;
 }
 
 .hero-image-wrapper {
@@ -384,8 +384,8 @@ p {
   top: 0;
   bottom: 0;
   left: 0;
-  width: 25%;
-  background: linear-gradient(to right, #EDECE8 0%, rgba(237, 236, 232, 0) 100%);
+  width: 10%;
+  background: linear-gradient(to right, #EDE7DA 0%, rgba(237, 231, 218, 0) 100%);
   z-index: 2;
   pointer-events: none;
 }
@@ -397,7 +397,7 @@ p {
   bottom: 0;
   right: 0;
   width: 25%;
-  background: linear-gradient(to left, #EDECE8 0%, rgba(237, 236, 232, 0) 100%);
+  background: linear-gradient(to left, #EDE7DA 0%, rgba(237, 231, 218, 0) 100%);
   z-index: 2;
   pointer-events: none;
 }
@@ -438,7 +438,7 @@ p {
   align-items: center;
   justify-content: center;
   padding: clamp(2rem, 5vw, 4rem) clamp(1.5rem, 3vw, 2.5rem) clamp(2rem, 5vw, 4rem) clamp(2rem, 5vw, 4rem);
-  background-color: #EDECE8;
+  background-color: #EDE7DA;
   text-align: center;
 }
 
