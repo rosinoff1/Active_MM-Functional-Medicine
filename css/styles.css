@@ -763,7 +763,7 @@ p {
 .shop-hero {
   padding-top: calc(80px + clamp(2.5rem, 5vw, 4rem));
   padding-bottom: clamp(2rem, 4vw, 3rem);
-  background: linear-gradient(to bottom, var(--color-white) 0%, var(--color-white) 70%, var(--color-background) 100%);
+  background: linear-gradient(to bottom, var(--color-white), var(--color-background));
   text-align: center;
 }
 
