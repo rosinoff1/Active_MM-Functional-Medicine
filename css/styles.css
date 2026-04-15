@@ -1015,6 +1015,10 @@ p {
   align-items: center;
 }
 
+.contact-panel-section + .contact-panel-section {
+  margin-top: clamp(2rem, 4vw, 3rem);
+}
+
 .contact-panel-section h2 {
   margin-bottom: 0.75rem;
 }
