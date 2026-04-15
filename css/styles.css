@@ -443,10 +443,10 @@ p {
 
 .hero-quote {
   font-family: var(--font-heading);
-  font-size: clamp(1.15rem, 1.6vw, 1.45rem);
+  font-size: clamp(1.8rem, 2.8vw, 2.6rem);
   color: var(--color-text);
-  line-height: 1.5;
-  margin-bottom: 0.75rem;
+  line-height: 1.35;
+  margin-bottom: 1rem;
   font-weight: 400;
 }
 
@@ -477,6 +477,7 @@ p {
    ============================================================ */
 .functional-medicine {
   background-color: var(--color-white);
+  padding: clamp(2rem, 4.5vw, 3.25rem) clamp(1.25rem, 5vw, 5%);
 }
 
 .functional-medicine h2 {
