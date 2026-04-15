@@ -463,7 +463,7 @@ p {
   max-width: 22ch;
   width: 100%;
   text-align: right;
-  transform: translateX(0.75rem);
+  transform: translateX(1.75rem);
 }
 
 .hero .btn-primary {
