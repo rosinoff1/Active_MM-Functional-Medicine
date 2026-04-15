@@ -761,8 +761,8 @@ p {
 .blog-hero,
 .faq-hero,
 .shop-hero {
-  padding-top: calc(80px + clamp(0.75rem, 1.5vw, 1.25rem));
-  padding-bottom: clamp(0.75rem, 1.5vw, 1.25rem);
+  padding-top: calc(80px + clamp(2.5rem, 5vw, 4rem));
+  padding-bottom: clamp(2rem, 4vw, 3rem);
   background-color: transparent;
   border-bottom: 1px solid #B07B7B;
   text-align: center;
