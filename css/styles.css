@@ -456,10 +456,14 @@ p {
 
 .hero-attribution {
   font-family: var(--font-body);
-  font-size: clamp(0.9rem, 1.2vw, 1.05rem);
+  font-size: clamp(1.05rem, 1.4vw, 1.25rem);
   color: var(--color-text);
   margin-bottom: 2rem;
   letter-spacing: 0.03em;
+  align-self: flex-end;
+  max-width: 22ch;
+  width: 100%;
+  text-align: right;
 }
 
 .hero .btn-primary {
@@ -918,29 +922,29 @@ p {
 /* ============================================================
    BLOG PAGE
    ============================================================ */
-.blog-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
-  max-width: var(--max-width);
-  margin: 0 auto;
-}
-
-.blog-row {
+.blog-two-col {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 2.5rem;
-  align-items: center;
+  gap: 3rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  align-items: start;
 }
 
-.blog-row-image {
+.blog-photos-col {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.blog-photo-item {
   aspect-ratio: 4 / 5;
   overflow: hidden;
   border-radius: 4px;
   background-color: var(--color-card);
 }
 
-.blog-row-image img {
+.blog-photo-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -948,7 +952,7 @@ p {
   display: block;
 }
 
-.blog-row-placeholder {
+.blog-photo-placeholder {
   width: 100%;
   height: 100%;
   display: flex;
@@ -961,11 +965,26 @@ p {
   font-size: 0.85rem;
 }
 
-.blog-row-content h3 {
+.blog-posts-col {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.blog-post-item {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--color-card);
+}
+
+.blog-post-item:last-child {
+  border-bottom: none;
+}
+
+.blog-post-item h3 {
   margin-bottom: 0.5rem;
 }
 
-.blog-row-content p {
+.blog-post-item p {
   font-style: italic;
   color: var(--color-text);
   font-size: 0.9rem;
@@ -1402,12 +1421,12 @@ p {
     direction: ltr;
   }
 
-  .blog-row {
+  .blog-two-col {
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 1.5rem;
   }
 
-  .blog-row-image {
+  .blog-photo-item {
     aspect-ratio: 4 / 3;
   }
 
