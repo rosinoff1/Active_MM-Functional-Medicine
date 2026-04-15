@@ -462,7 +462,7 @@ p {
   letter-spacing: 0.03em;
   max-width: 22ch;
   width: 100%;
-  text-align: left;
+  text-align: right;
 }
 
 .hero .btn-primary {
