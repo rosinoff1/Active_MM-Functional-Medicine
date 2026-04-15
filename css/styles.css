@@ -599,7 +599,7 @@ p {
   content: '\201C';
   font-family: var(--font-heading);
   font-size: 3.5rem;
-  color: var(--color-accent-light);
+  color: #B07B7B;
   position: absolute;
   top: 0.5rem;
   left: 1.25rem;
@@ -1160,7 +1160,7 @@ p {
 .site-footer {
   background-color: #1A1A1A;
   color: var(--color-white);
-  padding: 0.75rem clamp(1.25rem, 5vw, 5%);
+  padding: 1.5rem clamp(1.25rem, 5vw, 5%);
 }
 
 .footer-inner {
