@@ -761,7 +761,7 @@ p {
 .blog-hero,
 .faq-hero,
 .shop-hero {
-  padding-top: calc(80px + clamp(3rem, 8vw, 6rem));
+  padding-top: calc(80px + clamp(2rem, 4vw, 3rem));
   padding-bottom: clamp(2rem, 4vw, 3rem);
   background-color: var(--color-white);
   text-align: center;
@@ -1067,7 +1067,7 @@ p {
    FAQ PAGE
    ============================================================ */
 .faq-section {
-  background-color: var(--color-white);
+  background-color: #F3EBE3;
 }
 
 .faq-list {
