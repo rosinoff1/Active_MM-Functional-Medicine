@@ -460,10 +460,9 @@ p {
   color: var(--color-text);
   margin-bottom: 2rem;
   letter-spacing: 0.03em;
-  align-self: flex-end;
   max-width: 22ch;
   width: 100%;
-  text-align: right;
+  text-align: left;
 }
 
 .hero .btn-primary {
