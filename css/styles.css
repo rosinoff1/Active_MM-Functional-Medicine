@@ -1067,6 +1067,11 @@ p {
   margin-bottom: 1.5rem;
 }
 
+.contact-socials-hero {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
 .contact-socials a {
   display: flex;
   align-items: center;
