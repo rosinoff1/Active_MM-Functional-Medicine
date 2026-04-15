@@ -1270,6 +1270,7 @@ p {
 .subscribe-section {
   background-color: #FAF7F4;
   padding: clamp(1rem, 2vw, 1.5rem) clamp(1.25rem, 5vw, 5%);
+  border-top: 1px solid #B07B7B;
 }
 
 .subscribe-section h2 {
