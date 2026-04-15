@@ -1009,6 +1009,14 @@ p {
   align-items: start;
 }
 
+.contact-info {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-card);
+  border-top: 3px solid #B07B7B;
+  border-radius: 8px;
+  padding: clamp(2rem, 4vw, 3rem);
+}
+
 .contact-info h1 {
   margin-bottom: 1.25rem;
 }
