@@ -1100,7 +1100,11 @@ p {
 }
 
 .faq-question:hover {
-  color: var(--color-accent-mid);
+  color: #B07B7B;
+}
+
+.faq-question:hover .faq-chevron {
+  stroke: #B07B7B;
 }
 
 .faq-chevron {
