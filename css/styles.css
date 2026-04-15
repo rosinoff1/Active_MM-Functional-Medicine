@@ -446,6 +446,10 @@ p {
   font-weight: 400;
 }
 
+.hero-quote .quote-mark {
+  color: #B07B7B;
+}
+
 .hero-attribution {
   font-family: var(--font-body);
   font-size: clamp(0.9rem, 1.2vw, 1.05rem);
@@ -1161,6 +1165,7 @@ p {
   background-color: #1A1A1A;
   color: var(--color-white);
   padding: 0.75rem clamp(1.25rem, 5vw, 5%);
+  margin-top: 5rem;
 }
 
 .footer-inner {
