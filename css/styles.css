@@ -384,7 +384,7 @@ p {
   top: 0;
   bottom: 0;
   left: 0;
-  width: 8%;
+  width: 25%;
   background: linear-gradient(to right, #EDECE8 0%, rgba(237, 236, 232, 0) 100%);
   z-index: 2;
   pointer-events: none;
@@ -396,7 +396,7 @@ p {
   top: 0;
   bottom: 0;
   right: 0;
-  width: 50px;
+  width: 25%;
   background: linear-gradient(to left, #EDECE8 0%, rgba(237, 236, 232, 0) 100%);
   z-index: 2;
   pointer-events: none;
@@ -408,8 +408,8 @@ p {
   object-fit: cover;
   object-position: 55% center;
   display: block;
-  -webkit-mask-image: linear-gradient(to right, #000 0%, #000 100%);
-  mask-image: linear-gradient(to right, #000 0%, #000 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 12%, #000 88%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, #000 12%, #000 88%, transparent 100%);
 }
 
 .hero-placeholder {
