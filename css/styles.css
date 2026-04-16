@@ -386,8 +386,8 @@ p {
   background: linear-gradient(
     to right,
     #EDECE8 0%,
-    transparent 18%,
-    transparent 93%,
+    transparent 8%,
+    transparent 85%,
     #EDECE8 100%
   );
   pointer-events: none;
@@ -421,7 +421,7 @@ p {
 }
 
 .hero-content {
-  flex: 0 0 62%;
+  flex: 0 0 50%;
   position: relative;
   z-index: 2;
   display: flex;
