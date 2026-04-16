@@ -1350,6 +1350,10 @@ p {
     display: flex;
   }
 
+  main {
+    padding-top: 80px;
+  }
+
   .hero {
     flex-direction: column;
     height: auto !important;
@@ -1360,7 +1364,6 @@ p {
     flex: 0 0 auto;
     width: 100%;
     padding: clamp(1.5rem, 4vw, 2.5rem);
-    padding-top: calc(80px + 4rem);
   }
 
   .hero-image-wrapper {
