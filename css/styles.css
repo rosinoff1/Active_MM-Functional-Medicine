@@ -1029,14 +1029,24 @@ p {
 }
 
 .contact-line {
-  font-size: 0.9rem;
+  font-size: 1.05rem;
   color: var(--color-text);
-  margin-bottom: 0.4rem;
-  opacity: 0.8;
+  margin-bottom: 0.65rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
 }
 
 .contact-line a {
   color: inherit;
+}
+
+.contact-line-icon {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  stroke: var(--color-sage);
 }
 
 .contact-line:last-of-type {
