@@ -378,6 +378,20 @@ p {
   overflow: hidden;
 }
 
+.hero-image-wrapper::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to right,
+    #EDECE8 0%,
+    transparent 18%,
+    transparent 93%,
+    #EDECE8 100%
+  );
+  pointer-events: none;
+}
 
 .hero-image {
   width: 100%;
