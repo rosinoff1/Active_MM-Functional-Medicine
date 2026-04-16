@@ -1353,13 +1353,13 @@ p {
   .hero {
     flex-direction: column;
     height: auto;
-    margin-top: 80px;
   }
 
   .hero-content {
     flex: 0 0 auto;
     width: 100%;
     padding: clamp(1.5rem, 4vw, 2.5rem);
+    padding-top: calc(80px + 2rem);
   }
 
   .hero-image-wrapper {
