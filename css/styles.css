@@ -378,29 +378,6 @@ p {
   overflow: hidden;
 }
 
-.hero-image-wrapper::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 25%;
-  background: linear-gradient(to right, #EDECE8 0%, rgba(237, 236, 232, 0) 100%);
-  z-index: 2;
-  pointer-events: none;
-}
-
-.hero-image-wrapper::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 25%;
-  background: linear-gradient(to left, #EDECE8 0%, rgba(237, 236, 232, 0) 100%);
-  z-index: 2;
-  pointer-events: none;
-}
 
 .hero-image {
   width: 100%;
@@ -408,8 +385,6 @@ p {
   object-fit: cover;
   object-position: 55% center;
   display: block;
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 12%, #000 88%, transparent 100%);
-  mask-image: linear-gradient(to right, transparent 0%, #000 12%, #000 88%, transparent 100%);
 }
 
 .hero-placeholder {
