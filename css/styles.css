@@ -387,8 +387,8 @@ p {
     to right,
     #EDECE8 0%,
     transparent 8%,
-    transparent 75%,
-    #EDECE8 100%
+    transparent 60%,
+    #EDECE8 92%
   );
   pointer-events: none;
 }
