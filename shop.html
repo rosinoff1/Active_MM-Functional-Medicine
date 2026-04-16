@@ -10,6 +10,86 @@
   <link rel="preload" href="css/styles.css" as="style">
   <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Poppins:wght@300&family=Raleway:wght@400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .shop-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: 1fr;
+      gap: 2rem;
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    .shop-card {
+      background-color: #FAF7F4;
+      border: 1px solid #E8DDD3;
+      border-top: 3px solid #A47879;
+      border-radius: 8px;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .shop-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    .shop-card-image {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 4px 4px 0 0;
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    .shop-card-placeholder {
+      width: 100%;
+      height: 220px;
+      background: #E8DDD3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 300;
+      color: #1A1A1A;
+      font-size: 13px;
+      margin-bottom: 1rem;
+      border-radius: 4px 4px 0 0;
+    }
+
+    .shop-card-title {
+      font-family: 'Gilda Display', serif;
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: #1A1A1A;
+      line-height: 1.35;
+      margin-bottom: 0.75rem;
+    }
+
+    .shop-card-description {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 300;
+      font-size: 0.9rem;
+      color: #1A1A1A;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+    }
+
+    .shop-card .btn-primary {
+      align-self: center;
+    }
+
+    @media (max-width: 768px) {
+      .shop-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
 
