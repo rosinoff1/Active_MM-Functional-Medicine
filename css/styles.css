@@ -369,7 +369,7 @@ p {
   align-items: stretch;
   overflow: hidden;
   margin-top: 0;
-  background-color: #EDE6D8;
+  background-color: #EDECE8;
 }
 
 .hero-image-wrapper {
@@ -384,8 +384,8 @@ p {
   top: 0;
   bottom: 0;
   left: 0;
-  width: 80px;
-  background: linear-gradient(to right, #EDE6D8 0%, rgba(237, 230, 216, 0) 100%);
+  width: 25%;
+  background: linear-gradient(to right, #EDECE8 0%, rgba(237, 236, 232, 0) 100%);
   z-index: 2;
   pointer-events: none;
 }
@@ -396,8 +396,8 @@ p {
   top: 0;
   bottom: 0;
   right: 0;
-  width: 80px;
-  background: linear-gradient(to left, #EDE6D8 0%, rgba(237, 230, 216, 0) 100%);
+  width: 25%;
+  background: linear-gradient(to left, #EDECE8 0%, rgba(237, 236, 232, 0) 100%);
   z-index: 2;
   pointer-events: none;
 }
@@ -408,8 +408,8 @@ p {
   object-fit: cover;
   object-position: 55% center;
   display: block;
-  -webkit-mask-image: linear-gradient(to right, #000 0%, #000 100%);
-  mask-image: linear-gradient(to right, #000 0%, #000 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 12%, #000 88%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, #000 12%, #000 88%, transparent 100%);
 }
 
 .hero-placeholder {
@@ -440,7 +440,7 @@ p {
   align-items: center;
   justify-content: center;
   padding: clamp(2rem, 5vw, 4rem) clamp(1.5rem, 3vw, 2.5rem) clamp(2rem, 5vw, 4rem) clamp(2rem, 5vw, 4rem);
-  background-color: #EDE6D8;
+  background-color: #EDECE8;
   text-align: center;
 }
 
