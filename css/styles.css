@@ -378,15 +378,15 @@ p {
   overflow: hidden;
 }
 
-.hero-image-wrapper::before {
+.hero-content::after {
   content: '';
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
-  width: 25%;
-  background: linear-gradient(to right, #EDECE8 0%, rgba(237, 236, 232, 0) 100%);
-  z-index: 2;
+  right: 0;
+  width: 120px;
+  background: linear-gradient(to right, rgba(240, 235, 224, 0) 0%, #F0EBE0 100%);
+  z-index: 3;
   pointer-events: none;
 }
 
