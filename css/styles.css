@@ -1350,8 +1350,8 @@ p {
     display: flex;
   }
 
-  main {
-    padding-top: 80px;
+  #main-content {
+    margin-top: 80px;
   }
 
   .hero {
@@ -1363,7 +1363,7 @@ p {
   .hero-content {
     flex: 0 0 auto;
     width: 100%;
-    padding: clamp(1.5rem, 4vw, 2.5rem);
+    padding: 2rem clamp(1.5rem, 4vw, 2.5rem);
   }
 
   .hero-image-wrapper {
