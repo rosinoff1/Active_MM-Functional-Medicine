@@ -1350,32 +1350,6 @@ p {
     display: flex;
   }
 
-  .hero {
-    flex-direction: column;
-    height: auto;
-    align-items: stretch;
-  }
-
-  .hero-image-wrapper {
-    flex: 0 0 auto;
-    width: 100%;
-    aspect-ratio: 3 / 2;
-  }
-
-  .hero-image-wrapper::after {
-    background: none;
-  }
-
-  .hero-image {
-    object-position: center top;
-  }
-
-  .hero-content {
-    flex: 0 0 auto;
-    width: 100%;
-    padding: clamp(1.5rem, 4vw, 2.5rem);
-  }
-
   .hero-quote {
     font-size: clamp(1.3rem, 5vw, 1.6rem);
   }
