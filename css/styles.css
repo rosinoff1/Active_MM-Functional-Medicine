@@ -629,7 +629,7 @@ p {
 /* Credentials Bar (full-width, above About content) */
 .credentials-bar {
   width: 100%;
-  margin-top: 80px;
+  padding-top: 80px;
   background-color: #F0E8DE;
   display: flex;
   flex-direction: row;
@@ -1179,8 +1179,156 @@ p {
 }
 
 /* ============================================================
+   PRESS PAGE
+   ============================================================ */
+.press-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.press-card {
+  background-color: #FAF7F4;
+  border: 1px solid #E8DDD3;
+  border-top: 3px solid #A47879;
+  border-radius: 8px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.press-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.press-card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.press-card-publication {
+  font-family: 'Gilda Display', serif;
+  font-size: 0.9rem;
+  color: #A47879;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.press-card-title {
+  font-family: 'Gilda Display', serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #1A1A1A;
+  line-height: 1.35;
+  margin-bottom: 0.75rem;
+}
+
+.press-card-description {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 0.9rem;
+  color: #1A1A1A;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.press-card .btn-primary {
+  align-self: center;
+}
+
+/* ============================================================
    SHOP PAGE
    ============================================================ */
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 2rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.shop-card {
+  background-color: #FAF7F4;
+  border: 1px solid #E8DDD3;
+  border-top: 3px solid #A47879;
+  border-radius: 8px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shop-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.shop-card-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 4px 4px 0 0;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.shop-card-placeholder {
+  width: 100%;
+  height: 220px;
+  background: #E8DDD3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: #1A1A1A;
+  font-size: 13px;
+  margin-bottom: 1rem;
+  border-radius: 4px 4px 0 0;
+}
+
+.shop-card-title {
+  font-family: 'Gilda Display', serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #1A1A1A;
+  line-height: 1.35;
+  margin-bottom: 0.75rem;
+}
+
+.shop-card-description {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 0.9rem;
+  color: #1A1A1A;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.shop-card .btn-primary {
+  align-self: center;
+}
+
+.shop-card:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+  max-width: calc(50% - 1rem);
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* ============================================================
    FOOTER
    ============================================================ */
@@ -1418,6 +1566,25 @@ p {
   .footer-links {
     justify-content: center;
   }
+
+  .footer-brand { order: 0; }
+  .footer-links { order: 1; }
+  .footer-socials { order: 2; }
+  .footer-copy { order: 3; }
+
+  .press-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .shop-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+
+  .shop-card:last-child:nth-child(odd) {
+    grid-column: auto;
+    max-width: none;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1425,8 +1592,28 @@ p {
     padding: 1.25rem 1rem;
   }
 
+  .contact-line {
+    align-items: flex-start;
+  }
+
   .contact-map-inline iframe {
     height: 220px;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .subscribe-form input[type="email"] {
+    border-right: 1px solid var(--color-accent-mid);
+    border-radius: 2px;
+  }
+
+  .subscribe-form .btn-primary {
+    border-radius: 2px;
+    width: 100%;
+    text-align: center;
   }
 }
 
