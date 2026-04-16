@@ -1352,7 +1352,8 @@ p {
 
   .hero {
     flex-direction: column;
-    height: auto;
+    height: auto !important;
+    overflow: visible;
   }
 
   .hero-content {
