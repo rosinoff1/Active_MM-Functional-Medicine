@@ -803,7 +803,11 @@ p {
   object-position: center;
 }
 
-.program-card-wrapper:last-of-type .program-image img {
+.program-card-wrapper:nth-of-type(3) .program-image img {
+  object-position: center bottom;
+}
+
+.program-card-wrapper:nth-of-type(4) .program-image img {
   object-position: center top;
 }
 
