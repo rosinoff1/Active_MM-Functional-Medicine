@@ -648,7 +648,7 @@ p {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: stretch;
-  padding: 2rem 4rem;
+  padding: 2rem clamp(1.5rem, 5vw, 4rem);
   box-sizing: border-box;
   gap: 2rem;
 }
@@ -1614,6 +1614,12 @@ body.modal-open {
   .hero-attribution {
     font-size: 0.9rem;
     margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .faq-chevron {
+    width: 24px;
+    height: 24px;
   }
 
   .hero .btn-primary {
