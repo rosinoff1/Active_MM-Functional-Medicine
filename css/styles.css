@@ -792,7 +792,7 @@ p {
   position: relative;
   border-radius: 4px;
   overflow: hidden;
-  aspect-ratio: 2 / 3;
+  aspect-ratio: 3 / 4;
   background-color: var(--color-card);
 }
 
@@ -800,6 +800,11 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
+}
+
+.program-card-wrapper:last-of-type .program-image img {
+  object-position: center top;
 }
 
 .program-image-placeholder {
