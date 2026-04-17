@@ -85,6 +85,75 @@
     });
   }
 
+  /* --- Shop Inquiry Modal --- */
+  var shopModal = document.getElementById('shop-modal');
+  if (shopModal) {
+    var productSlot = shopModal.querySelector('[data-shop-modal-product]');
+    var productField = shopModal.querySelector('input[name="product"]');
+    var subjectField = shopModal.querySelector('input[name="_subject"]');
+    var modalForm = shopModal.querySelector('.shop-modal-form');
+    var modalSuccess = shopModal.querySelector('.shop-modal-success');
+    var inquireButtons = document.querySelectorAll('[data-shop-inquire]');
+    var lastFocused = null;
+
+    function openShopModal(product, key) {
+      productSlot.textContent = product;
+      productField.value = product;
+      subjectField.value = 'MMFunctionalMed_ShopContactForm_' + key;
+      modalForm.reset();
+      modalForm.hidden = false;
+      modalSuccess.hidden = true;
+      shopModal.classList.add('open');
+      shopModal.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('modal-open');
+      var firstInput = modalForm.querySelector('input:not([type="hidden"])');
+      if (firstInput) firstInput.focus();
+    }
+
+    function closeShopModal() {
+      shopModal.classList.remove('open');
+      shopModal.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('modal-open');
+      if (lastFocused) lastFocused.focus();
+    }
+
+    inquireButtons.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        lastFocused = btn;
+        openShopModal(btn.dataset.product, btn.dataset.productKey);
+      });
+    });
+
+    shopModal.querySelectorAll('[data-shop-modal-close]').forEach(function (el) {
+      el.addEventListener('click', closeShopModal);
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && shopModal.classList.contains('open')) {
+        closeShopModal();
+      }
+    });
+
+    modalForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var data = new FormData(modalForm);
+      fetch(modalForm.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      }).then(function (response) {
+        if (response.ok) {
+          modalForm.hidden = true;
+          modalSuccess.hidden = false;
+        } else {
+          modalForm.submit();
+        }
+      }).catch(function () {
+        modalForm.submit();
+      });
+    });
+  }
+
   /* --- Fade-in on scroll (Intersection Observer) --- */
   const fadeElements = document.querySelectorAll('.fade-in');
 
