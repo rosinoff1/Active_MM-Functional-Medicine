@@ -7,9 +7,9 @@
   <meta name="description" content="Shop trusted wellness resources and tools curated by Marylee Marre Functional Medicine.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="css/styles.css?v=25" as="style">
+  <link rel="preload" href="css/styles.css?v=26" as="style">
   <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Poppins:wght@300;700&family=Raleway:wght@400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=25">
+  <link rel="stylesheet" href="css/styles.css?v=26">
   <style>
     .shop-grid {
       display: grid;
@@ -205,31 +205,31 @@
         <img src="shop-celluma-photo113.jpg?v=25" alt="Celluma Red Light Therapy" class="shop-card-image">
         <h2 class="shop-card-title">Celluma Red Light Therapy</h2>
         <p class="shop-card-description">Bring the benefits of red light therapy home for skin, recovery, and cellular repair. A practitioner favorite.</p>
-        <a href="mailto:contact@mmfunctionalmed.org?subject=Shop%20%26%20Marketplace%20Inquiry" class="btn-primary">Inquire About Celluma</a>
+        <button type="button" class="btn-primary" data-shop-inquire data-product="Celluma" data-product-key="Celluma">Inquire About Celluma</button>
       </div>
       <div class="shop-card fade-in">
         <img src="shop-higherdose.jpg?v=25" alt="HigherDOSE Infrared Sauna Blanket" class="shop-card-image" style="object-fit: contain; background-color: #FAF7F4;">
         <h2 class="shop-card-title">HigherDOSE Infrared Sauna Blanket</h2>
         <p class="shop-card-description">Bring the detoxifying power of infrared heat home with the HigherDOSE Sauna Blanket, designed to boost circulation, ease muscle tension, and leave your skin glowing from the inside out.</p>
-        <a href="mailto:contact@mmfunctionalmed.org?subject=Shop%20%26%20Marketplace%20Inquiry" class="btn-primary">Inquire About HigherDOSE</a>
+        <button type="button" class="btn-primary" data-shop-inquire data-product="HigherDOSE" data-product-key="HigherDOSE">Inquire About HigherDOSE</button>
       </div>
       <div class="shop-card fade-in">
         <img src="shop-austin-air.jpg?v=25" alt="Austin Air Purifiers" class="shop-card-image" style="object-fit: contain; background-color: #FAF7F4;">
         <h2 class="shop-card-title">Austin Air Purifiers</h2>
         <p class="shop-card-description">Medical-grade air purification trusted by hospitals and homes alike. A clean-air essential Marylee recommends for every space.</p>
-        <a href="mailto:contact@mmfunctionalmed.org?subject=Shop%20%26%20Marketplace%20Inquiry" class="btn-primary">Inquire About Austin Air</a>
+        <button type="button" class="btn-primary" data-shop-inquire data-product="Austin Air" data-product-key="AustinAir">Inquire About Austin Air</button>
       </div>
       <div class="shop-card fade-in">
         <img src="shop-prenuvo.jpg?v=25" alt="Prenuvo" class="shop-card-image" style="object-fit: contain; background-color: #FAF7F4;">
         <h2 class="shop-card-title">Prenuvo Full-Body MRI</h2>
         <p class="shop-card-description">Proactive whole-body scanning for early detection and peace of mind. Marylee's trusted preventive imaging partner.</p>
-        <a href="mailto:contact@mmfunctionalmed.org?subject=Shop%20%26%20Marketplace%20Inquiry" class="btn-primary">Inquire About Prenuvo</a>
+        <button type="button" class="btn-primary" data-shop-inquire data-product="Prenuvo" data-product-key="Prenuvo">Inquire About Prenuvo</button>
       </div>
       <div class="shop-card fade-in">
         <img src="shop-wellness-spaces.png?v=25" alt="Premium Wellness Spaces" class="shop-card-image">
         <h2 class="shop-card-title">Premium Residential Wellness Spaces</h2>
         <p class="shop-card-description">Access curated wellness experiences including infrared sauna, cold plunge, red light therapy, salt therapy, and float tanks. Reach out for details and availability.</p>
-        <a href="mailto:contact@mmfunctionalmed.org?subject=Shop%20%26%20Marketplace%20Inquiry" class="btn-primary">Get Details</a>
+        <button type="button" class="btn-primary" data-shop-inquire data-product="Premium Residential Wellness Spaces" data-product-key="WellnessSpaces">Get Details</button>
       </div>
     </div>
   </section>
@@ -266,6 +266,37 @@
       <p class="footer-copy">Serving patients in Florida and New York &middot; Virtual appointments available &middot; contact@mmfunctionalmed.org</p>
     </div>
   </footer>
+
+  <!-- Shop Inquiry Modal -->
+  <div class="shop-modal" id="shop-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="shop-modal-title">
+    <div class="shop-modal-overlay" data-shop-modal-close></div>
+    <div class="shop-modal-content" role="document">
+      <button type="button" class="shop-modal-close" aria-label="Close dialog" data-shop-modal-close>&times;</button>
+      <h2 class="shop-modal-title" id="shop-modal-title">Inquire About <span data-shop-modal-product>Product</span></h2>
+      <form class="shop-modal-form" action="https://formspree.io/f/mgorabkb" method="POST">
+        <input type="hidden" name="product" value="">
+        <input type="hidden" name="_subject" value="">
+        <div class="form-row">
+          <label for="shop-modal-name">Name <span aria-hidden="true">*</span></label>
+          <input type="text" id="shop-modal-name" name="name" required>
+        </div>
+        <div class="form-row">
+          <label for="shop-modal-email">Email <span aria-hidden="true">*</span></label>
+          <input type="email" id="shop-modal-email" name="email" required>
+        </div>
+        <div class="form-row">
+          <label for="shop-modal-phone">Phone</label>
+          <input type="tel" id="shop-modal-phone" name="phone">
+        </div>
+        <div class="form-row">
+          <label for="shop-modal-message">Message <span aria-hidden="true">*</span></label>
+          <textarea id="shop-modal-message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Send Inquiry</button>
+      </form>
+      <p class="shop-modal-success" hidden>Thanks! We&rsquo;ll be in touch soon.</p>
+    </div>
+  </div>
 
   <script src="js/main.js"></script>
 </body>
