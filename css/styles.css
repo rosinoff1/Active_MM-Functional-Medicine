@@ -792,12 +792,8 @@ p {
   position: relative;
   border-radius: 4px;
   overflow: hidden;
-  aspect-ratio: 4 / 3;
-  background-color: var(--color-card);
-}
-
-.program-card-wrapper:first-of-type .program-image {
   aspect-ratio: 3 / 4;
+  background-color: var(--color-card);
 }
 
 .program-image img {
