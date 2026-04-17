@@ -85,6 +85,31 @@
     });
   }
 
+  /* --- Contact Form (AJAX submit with inline thanks) --- */
+  var contactForm = document.querySelector('.contact-form');
+  var contactSuccess = document.querySelector('.contact-form-success');
+
+  if (contactForm && contactSuccess) {
+    contactForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var data = new FormData(contactForm);
+      fetch(contactForm.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      }).then(function (response) {
+        if (response.ok) {
+          contactForm.hidden = true;
+          contactSuccess.hidden = false;
+        } else {
+          contactForm.submit();
+        }
+      }).catch(function () {
+        contactForm.submit();
+      });
+    });
+  }
+
   /* --- Shop Inquiry Modal --- */
   var shopModal = document.getElementById('shop-modal');
   if (shopModal) {
