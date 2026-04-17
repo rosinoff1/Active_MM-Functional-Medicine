@@ -1391,6 +1391,14 @@ p {
   margin-top: 0.5rem;
 }
 
+.subscribe-success {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: #B07B7B;
+  margin: 0 auto 0.5rem;
+  max-width: 480px;
+}
+
 /* ============================================================
    CTA BAND (used between sections)
    ============================================================ */

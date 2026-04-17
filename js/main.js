@@ -60,6 +60,31 @@
     });
   });
 
+  /* --- Newsletter Subscribe (AJAX submit with inline thanks) --- */
+  var subscribeForm = document.querySelector('.subscribe-form');
+  var subscribeSuccess = document.querySelector('.subscribe-success');
+
+  if (subscribeForm && subscribeSuccess) {
+    subscribeForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var data = new FormData(subscribeForm);
+      fetch(subscribeForm.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      }).then(function (response) {
+        if (response.ok) {
+          subscribeForm.hidden = true;
+          subscribeSuccess.hidden = false;
+        } else {
+          subscribeForm.submit();
+        }
+      }).catch(function () {
+        subscribeForm.submit();
+      });
+    });
+  }
+
   /* --- Fade-in on scroll (Intersection Observer) --- */
   const fadeElements = document.querySelectorAll('.fade-in');
 
