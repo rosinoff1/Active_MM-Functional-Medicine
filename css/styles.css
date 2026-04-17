@@ -39,6 +39,19 @@
   left: 0;
 }
 
+/* --- Visually Hidden (Accessible Only) --- */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* --- Reset --- */
 *,
 *::before,
@@ -655,7 +668,7 @@ p {
   border-right: none;
 }
 
-.credentials-bar .credential-item h3 {
+.credentials-bar .credential-item .credential-title {
   font-family: 'Gilda Display', serif;
   font-size: 1rem;
   color: #1A1A1A;
@@ -827,7 +840,9 @@ p {
   font-size: 0.85rem;
 }
 
-.program-details h3 {
+.program-details h2 {
+  font-family: var(--font-heading);
+  font-weight: 400;
   font-size: clamp(1.3rem, 2.2vw, 1.8rem);
   margin-bottom: 1.25rem;
 }
@@ -965,7 +980,10 @@ p {
   border-bottom: none;
 }
 
-.blog-post-item h3 {
+.blog-post-item h2 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: 1.25rem;
   margin-bottom: 0.5rem;
 }
 
