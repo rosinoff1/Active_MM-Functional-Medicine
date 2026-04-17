@@ -813,11 +813,11 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: center 35%;
 }
 
 .program-card-wrapper:nth-of-type(3) .program-image img {
-  object-position: center 60%;
+  object-position: center 40%;
 }
 
 .program-card-wrapper:nth-of-type(4) .program-image img {
