@@ -796,6 +796,10 @@ p {
   background-color: var(--color-card);
 }
 
+.program-card-wrapper:first-of-type .program-image {
+  aspect-ratio: 3 / 4;
+}
+
 .program-image img {
   width: 100%;
   height: 100%;
