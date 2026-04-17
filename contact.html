@@ -7,9 +7,9 @@
   <meta name="description" content="Get in touch with Marylee Marre Functional Medicine. Book a 15-minute discovery call or reach out to learn more about functional medicine.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="css/styles.css?v=25" as="style">
+  <link rel="preload" href="css/styles.css?v=26" as="style">
   <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Poppins:wght@300&family=Raleway:wght@400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=25">
+  <link rel="stylesheet" href="css/styles.css?v=26">
 </head>
 <body>
 
@@ -74,6 +74,32 @@
         <h2>Start With a Discovery Call</h2>
         <p>Every new patient begins with a 15-minute discovery call. This conversation helps us understand your goals and determine if functional medicine is the right fit for you. From there, we&rsquo;ll outline personalized next steps that align with your needs and support your path forward.</p>
         <a href="https://secure.gethealthie.com/appointments/embed_appt?dietitian_id=2627582" class="btn-primary" target="_blank" rel="noopener">Book a 15-Minute Discovery Call</a>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-panel-section">
+        <h2>Send Us a Message</h2>
+        <p>Have a question or want to share more about what you&rsquo;re experiencing? Send us a note and we&rsquo;ll be in touch soon.</p>
+        <form class="contact-form" action="https://formspree.io/f/xnjlpydp" method="POST">
+          <input type="hidden" name="_subject" value="New Contact Form Submission">
+          <div class="form-row">
+            <label for="contact-name">Name <span aria-hidden="true">*</span></label>
+            <input type="text" id="contact-name" name="name" required>
+          </div>
+          <div class="form-row">
+            <label for="contact-email">Email <span aria-hidden="true">*</span></label>
+            <input type="email" id="contact-email" name="email" required>
+          </div>
+          <div class="form-row">
+            <label for="contact-phone">Phone</label>
+            <input type="tel" id="contact-phone" name="phone">
+          </div>
+          <div class="form-row">
+            <label for="contact-message">Message <span aria-hidden="true">*</span></label>
+            <textarea id="contact-message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Send Message</button>
+        </form>
       </div>
 
       <!-- Contact Details -->
