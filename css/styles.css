@@ -378,6 +378,7 @@ p {
   position: relative;
   width: 100%;
   height: calc(70vh + 38px);
+  min-height: calc(100vw / 3 + 40px);
   padding-top: 40px;
   box-sizing: border-box;
   display: flex;
