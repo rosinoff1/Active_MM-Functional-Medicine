@@ -1,0 +1,6 @@
+# Local-only HD source photos used to generate *-desktop.jpg/png variants.
+# Never commit these — they're too large and aren't needed in the deploy.
+hd-originals/
+
+# macOS
+.DS_Store
