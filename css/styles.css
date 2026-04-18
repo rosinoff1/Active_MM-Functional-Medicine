@@ -1660,8 +1660,8 @@ body.modal-open {
   }
 
   .about-image-wrapper {
-    aspect-ratio: 1 / 1;
-    max-height: 400px;
+    aspect-ratio: 2 / 3;
+    max-height: none;
   }
 
   .program-layout {
@@ -1678,7 +1678,7 @@ body.modal-open {
   }
 
   .blog-photo-item {
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 4 / 5;
   }
 
   .footer-inner {
