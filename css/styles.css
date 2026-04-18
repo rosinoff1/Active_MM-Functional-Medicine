@@ -378,6 +378,8 @@ p {
   position: relative;
   width: 100%;
   height: calc(70vh + 38px);
+  padding-top: 80px;
+  box-sizing: border-box;
   display: flex;
   align-items: stretch;
   overflow: hidden;
