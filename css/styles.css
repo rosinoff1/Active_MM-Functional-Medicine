@@ -1585,7 +1585,7 @@ body.modal-open {
 /* ============================================================
    RESPONSIVE - Mobile First Overrides
    ============================================================ */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .nav-links {
     display: none;
   }
@@ -1696,7 +1696,7 @@ body.modal-open {
   .footer-copy { order: 3; }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .credentials-bar {
     flex-direction: column;
     padding: 1.5rem 2rem;
