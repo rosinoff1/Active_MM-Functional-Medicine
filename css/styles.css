@@ -444,14 +444,14 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: clamp(2rem, 5vw, 4rem) clamp(1.5rem, 3vw, 2.5rem) clamp(2rem, 5vw, 4rem) clamp(2rem, 5vw, 4rem);
+  padding: 3rem 2rem 3rem 3rem;
   background-color: #EDECE8;
   text-align: center;
 }
 
 .hero-quote {
   font-family: var(--font-heading);
-  font-size: clamp(1.45rem, 2.1vw, 1.95rem);
+  font-size: 1.8rem;
   color: var(--color-text);
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -464,7 +464,7 @@ p {
 
 .hero-attribution {
   font-family: var(--font-body);
-  font-size: clamp(1.05rem, 1.4vw, 1.25rem);
+  font-size: 1.15rem;
   color: var(--color-text);
   margin-bottom: 2rem;
   letter-spacing: 0.03em;
