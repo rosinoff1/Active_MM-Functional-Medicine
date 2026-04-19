@@ -1598,27 +1598,64 @@ body.modal-open {
   }
 
   .hero {
-    flex-direction: column;
-    height: auto !important;
-    overflow: visible;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 72vh !important;
+    min-height: 520px;
+    overflow: hidden;
     padding-top: 90px !important;
   }
 
-  .hero-content {
-    flex: 0 0 auto;
+  .hero-content,
+  .hero-image-wrapper {
+    grid-column: 1;
+    grid-row: 1;
     width: 100%;
-    padding: 1.5rem clamp(1.5rem, 4vw, 2.5rem);
+  }
+
+  .hero-image-wrapper {
+    z-index: 1;
+    aspect-ratio: auto;
+    flex: none;
+    height: 100%;
+  }
+
+  .hero-image {
+    object-position: 75% center !important;
+    transform: none !important;
+  }
+
+  .hero-image-wrapper::after {
+    background: linear-gradient(
+      to right,
+      rgba(237, 236, 232, 0.95) 0%,
+      rgba(237, 236, 232, 0.85) 35%,
+      rgba(237, 236, 232, 0.3) 65%,
+      transparent 85%
+    );
+  }
+
+  .hero-content {
+    z-index: 2;
+    flex: none;
+    padding: 2rem 1.5rem;
+    background: transparent;
+    align-items: flex-start;
+    text-align: left;
+    justify-content: center;
+  }
+
+  .hero-quote {
+    font-size: clamp(1.15rem, 4.5vw, 1.4rem);
+    max-width: 60%;
   }
 
   .hero-attribution {
     font-size: 0.9rem;
-    margin-bottom: 1rem;
-    text-align: center;
-  }
-
-  .faq-chevron {
-    width: 24px;
-    height: 24px;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    max-width: 60%;
   }
 
   .hero .btn-primary {
@@ -1626,23 +1663,9 @@ body.modal-open {
     padding: 0.7rem 1.5rem;
   }
 
-  .hero-image-wrapper {
-    flex: 0 0 auto;
-    width: 100%;
-    aspect-ratio: 3 / 2;
-  }
-
-  .hero-image-wrapper::after {
-    background: none;
-  }
-
-  .hero-image {
-    object-position: center top !important;
-    transform: none !important;
-  }
-
-  .hero-quote {
-    font-size: clamp(1.15rem, 4.5vw, 1.4rem);
+  .faq-chevron {
+    width: 24px;
+    height: 24px;
   }
 
   .benefit-grid {
