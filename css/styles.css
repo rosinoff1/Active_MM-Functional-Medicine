@@ -1598,27 +1598,16 @@ body.modal-open {
   }
 
   .hero {
-    flex-direction: column;
-    height: auto !important;
-    overflow: visible;
     padding-top: 90px !important;
   }
 
   .hero-content {
-    flex: 0 0 auto;
-    width: 100%;
-    padding: 1.5rem clamp(1.5rem, 4vw, 2.5rem);
-  }
-
-  .hero-quote {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
+    padding: 1.5rem clamp(1rem, 3vw, 2rem);
   }
 
   .hero-attribution {
     font-size: 0.9rem;
     margin-bottom: 1rem;
-    text-align: center;
   }
 
   .faq-chevron {
@@ -1631,23 +1620,8 @@ body.modal-open {
     padding: 0.7rem 1.5rem;
   }
 
-  .hero-image-wrapper {
-    flex: 0 0 auto;
-    width: 100%;
-    aspect-ratio: 3 / 2;
-  }
-
-  .hero-image-wrapper::after {
-    background: none;
-  }
-
-  .hero-image {
-    object-position: center top !important;
-    transform: none !important;
-  }
-
   .hero-quote {
-    font-size: clamp(1.15rem, 4.5vw, 1.4rem);
+    font-size: clamp(1rem, 2.4vw, 1.4rem);
   }
 
   .benefit-grid {
