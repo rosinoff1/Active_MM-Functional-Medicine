@@ -451,7 +451,7 @@ p {
 
 .hero-quote {
   font-family: var(--font-heading);
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: var(--color-text);
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -1647,7 +1647,7 @@ body.modal-open {
   }
 
   .hero-quote {
-    font-size: clamp(1.3rem, 5vw, 1.6rem);
+    font-size: clamp(1.15rem, 4.5vw, 1.4rem);
   }
 
   .benefit-grid {
