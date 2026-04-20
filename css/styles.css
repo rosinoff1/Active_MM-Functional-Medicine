@@ -503,8 +503,7 @@ p {
     position: relative;
     width: 100%;
     flex: none;
-    aspect-ratio: 13 / 5;
-    background-color: #EDECE8;
+    aspect-ratio: 12 / 5;
   }
 
   .hero-baked .hero-image-wrapper::after {
@@ -514,8 +513,8 @@ p {
   .hero-baked .hero-image {
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    object-position: 100% center !important;
+    object-fit: cover;
+    object-position: center !important;
   }
 
   .hero-baked .hero-content {
