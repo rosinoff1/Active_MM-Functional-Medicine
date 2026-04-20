@@ -534,21 +534,28 @@ p {
 }
 
 .hero.hero-baked .hero-quote {
-  font-size: clamp(0.7rem, 1.4vw, 1.45rem) !important;
+  font-size: clamp(0.7rem, 1.6vw, 1.75rem) !important;
   margin-bottom: clamp(0.3rem, 0.8vw, 1.25rem) !important;
 }
 
 .hero.hero-baked .hero-attribution {
-  font-size: clamp(0.55rem, 1vw, 1.15rem) !important;
+  font-size: clamp(0.55rem, 1.1vw, 1.25rem) !important;
   margin-bottom: clamp(0.4rem, 1.2vw, 2rem) !important;
   text-align: center !important;
 }
 
 .hero.hero-baked .btn-primary {
-  font-size: clamp(0.55rem, 1vw, 1.1rem) !important;
+  font-size: clamp(0.55rem, 1.1vw, 1.2rem) !important;
   padding: clamp(0.3rem, 0.7vw, 0.9rem) clamp(0.6rem, 1.5vw, 2.15rem) !important;
   min-width: 0 !important;
   white-space: nowrap;
+}
+
+/* Widen overlay on mobile/tablet so quote fits in 2 lines */
+@media (max-width: 1024px) {
+  .hero.hero-baked .hero-content {
+    width: 65% !important;
+  }
 }
 
 /* Hide forced quote line break on mobile so text flows naturally */
