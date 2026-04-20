@@ -493,7 +493,7 @@ p {
   position: relative;
   height: auto !important;
   min-height: 0 !important;
-  padding-top: 70px !important;
+  padding-top: 63px !important;
   overflow: hidden !important;
   background: transparent;
 }
@@ -520,7 +520,7 @@ p {
 
 .hero-baked .hero-content {
   position: absolute;
-  top: 70px;
+  top: 63px;
   left: 0;
   bottom: 0;
   width: 45%;
