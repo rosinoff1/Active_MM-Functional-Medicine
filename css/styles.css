@@ -581,6 +581,9 @@ p {
 }
 
 @media (max-width: 480px) {
+  .hero.hero-baked .hero-content {
+    transform: translateX(-1.2rem) !important;
+  }
   .hero.hero-baked .hero-quote-block {
     font-size: 0.72rem !important;
   }
