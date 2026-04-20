@@ -487,6 +487,52 @@ p {
   border: 1px solid #3A3A3A;
 }
 
+/* Baked photo hero (Canva photo, HTML quote/button overlay) — desktop only */
+@media (min-width: 1025px) {
+  .hero-baked {
+    display: block;
+    position: relative;
+    height: auto;
+    min-height: 0;
+    padding-top: 70px;
+    overflow: hidden;
+    background: transparent;
+  }
+
+  .hero-baked .hero-image-wrapper {
+    position: relative;
+    width: 100%;
+    flex: none;
+    aspect-ratio: 12 / 5;
+  }
+
+  .hero-baked .hero-image-wrapper::after {
+    display: none;
+  }
+
+  .hero-baked .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center !important;
+  }
+
+  .hero-baked .hero-content {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    bottom: 0;
+    width: 45%;
+    z-index: 2;
+    background: transparent;
+    padding: 0 clamp(2rem, 4vw, 4rem);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: none;
+  }
+}
+
 /* ============================================================
    WHAT IS FUNCTIONAL MEDICINE
    ============================================================ */
