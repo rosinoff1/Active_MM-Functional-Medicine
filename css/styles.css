@@ -449,26 +449,34 @@ p {
   text-align: center;
 }
 
-.hero-quote {
+.hero-quote-block {
+  max-width: 38ch;
+  width: 100%;
   font-family: var(--font-heading);
+  font-style: italic;
   font-size: 1.45rem;
+}
+
+.hero-quote {
+  font-family: inherit;
+  font-size: inherit;
   color: var(--color-text);
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 1.25rem;
   font-weight: 400;
-  max-width: 38ch;
   text-wrap: balance;
-  font-style: italic;
+  font-style: inherit;
 }
 
 .hero-attribution {
+  display: block;
   font-family: var(--font-body);
+  font-style: normal;
   font-size: 1.15rem;
   color: var(--color-text);
   margin-bottom: 2rem;
   letter-spacing: 0.03em;
-  max-width: 38ch;
   width: 100%;
   text-align: right;
 }
@@ -533,8 +541,11 @@ p {
   flex: none;
 }
 
-.hero.hero-baked .hero-quote {
+.hero.hero-baked .hero-quote-block {
   font-size: clamp(0.6rem, 1.6vw, 1.75rem) !important;
+}
+
+.hero.hero-baked .hero-quote {
   margin-bottom: clamp(0.3rem, 0.8vw, 1.25rem) !important;
 }
 
@@ -542,15 +553,7 @@ p {
   font-size: clamp(0.6rem, 1.6vw, 1.75rem) !important;
   margin-bottom: clamp(0.4rem, 1.2vw, 2rem) !important;
   width: 100% !important;
-  max-width: 38ch !important;
   text-align: right !important;
-}
-
-@media (max-width: 1024px) {
-  .hero.hero-baked .hero-attribution {
-    text-align: center !important;
-    max-width: none !important;
-  }
 }
 
 .hero.hero-baked .btn-primary {
@@ -1700,7 +1703,7 @@ body.modal-open {
   .hero-attribution {
     font-size: 0.9rem;
     margin-bottom: 1rem;
-    text-align: center;
+    text-align: right;
   }
 
   .faq-chevron {
