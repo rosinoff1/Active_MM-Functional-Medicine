@@ -534,14 +534,16 @@ p {
 }
 
 .hero.hero-baked .hero-quote {
-  font-size: clamp(0.7rem, 1.6vw, 1.75rem) !important;
+  font-size: clamp(0.6rem, 1.6vw, 1.75rem) !important;
   margin-bottom: clamp(0.3rem, 0.8vw, 1.25rem) !important;
 }
 
 .hero.hero-baked .hero-attribution {
   font-size: clamp(0.55rem, 1.1vw, 1.25rem) !important;
   margin-bottom: clamp(0.4rem, 1.2vw, 2rem) !important;
-  text-align: center !important;
+  width: 100% !important;
+  max-width: 38ch !important;
+  text-align: right !important;
 }
 
 .hero.hero-baked .btn-primary {
