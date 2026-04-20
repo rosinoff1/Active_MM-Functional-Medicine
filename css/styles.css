@@ -539,7 +539,7 @@ p {
 }
 
 .hero.hero-baked .hero-attribution {
-  font-size: clamp(0.55rem, 1.5vw, 1.75rem) !important;
+  font-size: clamp(0.6rem, 1.6vw, 1.75rem) !important;
   margin-bottom: clamp(0.4rem, 1.2vw, 2rem) !important;
   width: 100% !important;
   max-width: 38ch !important;
