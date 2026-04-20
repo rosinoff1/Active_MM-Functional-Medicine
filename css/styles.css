@@ -493,7 +493,7 @@ p {
   position: relative;
   height: auto !important;
   min-height: 0 !important;
-  padding-top: 63px !important;
+  padding-top: 0 !important;
   overflow: hidden !important;
   background-color: #EDECE8 !important;
 }
