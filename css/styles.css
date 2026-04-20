@@ -539,11 +539,18 @@ p {
 }
 
 .hero.hero-baked .hero-attribution {
-  font-size: clamp(0.55rem, 1.1vw, 1.25rem) !important;
+  font-size: clamp(0.55rem, 1.25vw, 1.5rem) !important;
   margin-bottom: clamp(0.4rem, 1.2vw, 2rem) !important;
   width: 100% !important;
-  max-width: 38ch !important;
+  max-width: 32ch !important;
   text-align: right !important;
+}
+
+@media (max-width: 1024px) {
+  .hero.hero-baked .hero-attribution {
+    text-align: center !important;
+    max-width: none !important;
+  }
 }
 
 .hero.hero-baked .btn-primary {
