@@ -582,7 +582,8 @@ p {
 
 @media (max-width: 480px) {
   .hero.hero-baked .hero-content {
-    transform: translateX(-1.2rem) !important;
+    padding-left: 0 !important;
+    padding-right: clamp(1.5rem, 6vw, 3rem) !important;
   }
   .hero.hero-baked .hero-quote-block {
     font-size: 0.72rem !important;
