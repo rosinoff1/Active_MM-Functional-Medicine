@@ -542,7 +542,7 @@ p {
 }
 
 .hero.hero-baked .hero-quote-block {
-  font-size: clamp(0.6rem, 1.6vw, 1.75rem) !important;
+  font-size: clamp(0.75rem, 1.9vw, 2rem) !important;
 }
 
 .hero.hero-baked .hero-quote {
@@ -550,15 +550,15 @@ p {
 }
 
 .hero.hero-baked .hero-attribution {
-  font-size: clamp(0.6rem, 1.6vw, 1.75rem) !important;
+  font-size: clamp(0.65rem, 1.65vw, 1.8rem) !important;
   margin-bottom: clamp(0.4rem, 1.2vw, 2rem) !important;
   width: 100% !important;
   text-align: right !important;
 }
 
 .hero.hero-baked .btn-primary {
-  font-size: clamp(0.55rem, 1.1vw, 1.2rem) !important;
-  padding: clamp(0.3rem, 0.7vw, 0.9rem) clamp(0.6rem, 1.5vw, 2.15rem) !important;
+  font-size: clamp(0.7rem, 1.35vw, 1.4rem) !important;
+  padding: clamp(0.4rem, 0.8vw, 1rem) clamp(0.8rem, 1.7vw, 2.4rem) !important;
   min-width: 0 !important;
   white-space: nowrap;
 }
