@@ -495,7 +495,7 @@ p {
   min-height: 0 !important;
   padding-top: 63px !important;
   overflow: hidden !important;
-  background: transparent;
+  background-color: #EDECE8 !important;
 }
 
 .hero-baked .hero-image-wrapper {
