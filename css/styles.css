@@ -582,18 +582,18 @@ p {
 
 @media (max-width: 480px) {
   .hero.hero-baked .hero-quote-block {
-    font-size: 0.85rem !important;
+    font-size: 0.72rem !important;
   }
   .hero.hero-baked .hero-quote {
-    margin-bottom: 0.4rem !important;
+    margin-bottom: 0.35rem !important;
   }
   .hero.hero-baked .hero-attribution {
-    font-size: 0.65rem !important;
-    margin-bottom: 0.6rem !important;
+    font-size: 0.55rem !important;
+    margin-bottom: 0.5rem !important;
   }
   .hero.hero-baked .btn-primary {
-    font-size: 0.65rem !important;
-    padding: 0.35rem 0.9rem !important;
+    font-size: 0.55rem !important;
+    padding: 0.28rem 0.75rem !important;
   }
 }
 
