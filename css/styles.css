@@ -542,7 +542,7 @@ p {
 }
 
 .hero.hero-baked .hero-quote-block {
-  font-size: 1.65rem !important;
+  font-size: 1.5rem !important;
 }
 
 .hero.hero-baked .hero-quote {
@@ -550,61 +550,59 @@ p {
 }
 
 .hero.hero-baked .hero-attribution {
-  font-size: 1.15rem !important;
-  margin-bottom: 1.5rem !important;
+  font-size: 1rem !important;
+  margin-bottom: 1.25rem !important;
   width: 100% !important;
   text-align: right !important;
 }
 
 .hero.hero-baked .btn-primary {
-  font-size: 1.1rem !important;
-  padding: 0.75rem 2rem !important;
+  font-size: 1rem !important;
+  padding: 0.65rem 1.75rem !important;
   min-width: 0 !important;
   white-space: nowrap;
 }
 
 @media (max-width: 1024px) {
+  .hero.hero-baked .hero-content {
+    width: 80% !important;
+  }
   .hero.hero-baked .hero-quote-block {
-    font-size: 1.15rem !important;
+    font-size: 0.95rem !important;
   }
   .hero.hero-baked .hero-quote {
     margin-bottom: 0.6rem !important;
   }
   .hero.hero-baked .hero-attribution {
-    font-size: 0.8rem !important;
-    margin-bottom: 0.9rem !important;
+    font-size: 0.7rem !important;
+    margin-bottom: 0.8rem !important;
   }
   .hero.hero-baked .btn-primary {
-    font-size: 0.8rem !important;
-    padding: 0.5rem 1.3rem !important;
+    font-size: 0.7rem !important;
+    padding: 0.4rem 1.1rem !important;
   }
 }
 
 @media (max-width: 480px) {
+  .hero.hero-baked .hero-content {
+    width: 92% !important;
+  }
   .hero.hero-baked .hero-quote-block {
-    font-size: 0.85rem !important;
+    font-size: 0.75rem !important;
   }
   .hero.hero-baked .hero-quote {
     margin-bottom: 0.4rem !important;
   }
   .hero.hero-baked .hero-attribution {
-    font-size: 0.65rem !important;
-    margin-bottom: 0.6rem !important;
+    font-size: 0.58rem !important;
+    margin-bottom: 0.55rem !important;
   }
   .hero.hero-baked .btn-primary {
-    font-size: 0.65rem !important;
-    padding: 0.35rem 0.9rem !important;
+    font-size: 0.58rem !important;
+    padding: 0.3rem 0.85rem !important;
   }
 }
 
-/* Widen overlay on mobile/tablet so quote fits in 2 lines */
-@media (max-width: 1024px) {
-  .hero.hero-baked .hero-content {
-    width: 65% !important;
-  }
-}
-
-/* Hide forced quote line break on mobile so text flows naturally */
 @media (max-width: 1024px) {
   .hero-break {
     display: none;
